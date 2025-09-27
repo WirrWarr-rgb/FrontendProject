@@ -1,4 +1,35 @@
 :root {
-  --color-white: #e3e3e3;
-  --color-black: #1d1d1d;
+  --color-text-primary: #191919;
+  --color-text-secondary: #1E1E1E;
+  --color-text-alt: #969696;
+
+  --color-bg-dark: #052825;
+  --color-bg-secondary: #E7EBFC;
+
+  --color-nero: #1A1A1A;
+  --color-grey: #767676;
+  --color-white: #FFFFFF;
+  --color-primary: #2E4FD7;
+  --color-light-blue: #A1B3F4;
+  --color-secondary: #46BA71;
+  --color-alt: #F46953;
+
+  --color-black: #000000;
+  --color-logo-google-blue: #4285F4;
+  --color-logo-chilled-chilly: #EA4335;
+  --color-logo-safety-orange: #FF6600;
+  --color-logo-orange-peel: #FF9900;
+  --color-logo-deep-sky-blue : #00A4EF;
+  --color-logo-space-cadet: #041E42;
+  --color-logo-chateau-green: #34A853;
+  --color-logo-fed-ex-purple: #652C8F;
+  --color-logo-industrial-revolution: #737373;
+  --color-logo-lime-green: #7FBA00;
+  --color-logo-pear: #D7DF23;
+  --color-logo-cinnabar: #EE2E24;
+  --color-logo-orange-red: #F25022;
+  --color-logo-selective-yellow: #FBBC05;
+  --color-logo-radical-red: #FF385C;
+  --color-logo-bladder-burst: #FFB900;
+  --color-logo-turbo: #FFC124;
 }

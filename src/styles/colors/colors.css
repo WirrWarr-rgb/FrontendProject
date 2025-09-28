@@ -1,35 +1,32 @@
 :root {
   --color-text-primary: #191919;
-  --color-text-secondary: #1E1E1E;
+  --color-text-secondary: #1e1e1e;
   --color-text-alt: #969696;
-
   --color-bg-dark: #052825;
-  --color-bg-secondary: #E7EBFC;
-
-  --color-nero: #1A1A1A;
+  --color-bg-secondary: #e7ebfc;
+  --color-nero: #1a1a1a;
   --color-grey: #767676;
-  --color-white: #FFFFFF;
-  --color-primary: #2E4FD7;
-  --color-light-blue: #A1B3F4;
-  --color-secondary: #46BA71;
-  --color-alt: #F46953;
-
-  --color-black: #000000;
-  --color-logo-google-blue: #4285F4;
-  --color-logo-chilled-chilly: #EA4335;
-  --color-logo-safety-orange: #FF6600;
-  --color-logo-orange-peel: #FF9900;
-  --color-logo-deep-sky-blue : #00A4EF;
-  --color-logo-space-cadet: #041E42;
-  --color-logo-chateau-green: #34A853;
-  --color-logo-fed-ex-purple: #652C8F;
+  --color-white: #fff;
+  --color-primary: #2e4fd7;
+  --color-light-blue: #a1b3f4;
+  --color-secondary: #46ba71;
+  --color-alt: #f46953;
+  --color-black: #000;
+  --color-logo-google-blue: #4285f4;
+  --color-logo-chilled-chilly: #ea4335;
+  --color-logo-safety-orange: #f60;
+  --color-logo-orange-peel: #f90;
+  --color-logo-deep-sky-blue: #00a4ef;
+  --color-logo-space-cadet: #041e42;
+  --color-logo-chateau-green: #34a853;
+  --color-logo-fed-ex-purple: #652c8f;
   --color-logo-industrial-revolution: #737373;
-  --color-logo-lime-green: #7FBA00;
-  --color-logo-pear: #D7DF23;
-  --color-logo-cinnabar: #EE2E24;
-  --color-logo-orange-red: #F25022;
-  --color-logo-selective-yellow: #FBBC05;
-  --color-logo-radical-red: #FF385C;
-  --color-logo-bladder-burst: #FFB900;
-  --color-logo-turbo: #FFC124;
+  --color-logo-lime-green: #7fba00;
+  --color-logo-pear: #d7df23;
+  --color-logo-cinnabar: #ee2e24;
+  --color-logo-orange-red: #f25022;
+  --color-logo-selective-yellow: #fbbc05;
+  --color-logo-radical-red: #ff385c;
+  --color-logo-bladder-burst: #ffb900;
+  --color-logo-turbo: #ffc124;
 }

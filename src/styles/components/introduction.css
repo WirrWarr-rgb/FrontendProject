@@ -1,0 +1,60 @@
+.introduction {
+  background-color: var(--color-bg-dark);
+  display: flex;
+  flex-direction: column;
+
+  /* padding-left: 111px; */
+}
+
+.banner__title {
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 112%;
+  letter-spacing: -0.02em;
+  text-transform: capitalize;
+  color: var(--color-white);
+  text-align: left;
+  padding-top: 134px;
+}
+
+.quote {
+  padding-top: 31px;
+  padding-bottom: 36px;
+}
+
+.quote__text {
+  font-family: var(--font-family);
+  font-style: italic;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 142%;
+  letter-spacing: -0.02em;
+  color: var(--color-white);
+  text-align: left;
+  padding-bottom: 36px;
+}
+
+.quote__icon {
+  border-radius: 100px;
+  width: 90px;
+  height: 90px;
+}
+
+.quote__name {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 156%;
+  letter-spacing: -0.02em;
+  color: var(--color-white);
+}
+
+.quote__job {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 162%;
+  letter-spacing: -0.02em;
+  color: var(--base-text-on-dark);
+}

@@ -1,0 +1,117 @@
+/* Для мобильных устройств */
+.navbar {
+  display: flex;
+  flex-direction: column;
+  padding-top: 12px;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+}
+
+/* Для мобильных устройств: все в колонку */
+.navbar__menu {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding-left: 0;
+  padding-right: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 160%;
+  text-align: center;
+}
+
+.navbar__logo {
+  display: flex;
+  flex-direction: row;
+  gap: 2px;
+  justify-content: center;
+}
+
+.navbar__link:hover {
+  color: var(--color-primary);
+  cursor: pointer;
+}
+
+.navbar__actions {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: center;
+}
+
+.navbar__action {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
+}
+
+/* Для средих устройств */
+@media (--md-viewport) {
+  .navbar {
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 16px;
+  }
+
+  .navbar__menu {
+    flex-direction: row;
+    gap: 24px;
+    padding-left: 40px;
+    padding-right: 60px;
+    font-size: 16px;
+  }
+
+  .navbar__actions {
+    flex-direction: row;
+    gap: 24px;
+  }
+
+  .navbar__action {
+    gap: 10px;
+  }
+}
+
+/* Для больших экранов */
+@media (--lg-viewport) {
+  .navbar {
+    padding-top: 18px;
+  }
+
+  .navbar__menu {
+    gap: 32px;
+    padding-left: 50px;
+    padding-right: 120px;
+    font-size: 16px;
+  }
+
+  .navbar__actions {
+    gap: 30px;
+  }
+
+  .navbar__action {
+    gap: 12px;
+  }
+}
+
+@media (--xl-viewport) {
+  .navbar {
+    padding-top: 20px;
+  }
+
+  .navbar__menu {
+    gap: 40px;
+    padding-left: 60px;
+    padding-right: 172px;
+    font-size: 16px;
+  }
+
+  .navbar__actions {
+    gap: 36px;
+  }
+
+  .navbar__action {
+    gap: 12px;
+  }
+}

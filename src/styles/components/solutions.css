@@ -1,0 +1,16 @@
+.solutions {
+  background-color: var(--color-bg-dark);
+  display: flex;
+  flex-direction: column;
+}
+
+.solutions__title {
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 52px;
+  line-height: 119%;
+  letter-spacing: -0.02em;
+  color: var(--color-white);
+  text-align: center;
+  padding-top: 134px;
+}

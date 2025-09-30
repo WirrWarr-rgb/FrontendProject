@@ -6,7 +6,7 @@
   display: inline-flex;
   align-items: center;
   gap: 10px;
-  position: relative; 
+  position: relative;
 }
 
 .button--small {
@@ -35,16 +35,14 @@
   padding: 15px 25px;
   width: 166px;
   height: 56px;
-  background: rgba(255, 255, 255, 0);
+  background: rgb(255 255 255 / 0%);
   color: var(--base-white);
   font-weight: 500;
   font-size: 16px;
   line-height: 162%;
   align-items: center;
-  margin: 38px auto 0 auto;
-  
+  margin: 38px auto 0;
   background-color: transparent;
-  
   transition: all 0.3s ease;
 }
 

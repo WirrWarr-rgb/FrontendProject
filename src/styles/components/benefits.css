@@ -28,8 +28,13 @@
   display: flex; /* Flex для расположения иконки и текста */
   align-items: flex-start; /* Выравнивание по верху */
   gap: 40px; /* Расстояние между иконкой и текстом */
-  background: var(--color-bg-light);
+  background-color: var(--color-white);
   border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.benefits__item:hover {
+  transform: translateY(-5px);
 }
 
 .benefits__item-icon {

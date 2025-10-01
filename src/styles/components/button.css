@@ -7,6 +7,8 @@
   align-items: center;
   gap: 10px;
   position: relative;
+  border: none;
+  transition: all 0.3s ease;
 }
 
 .button--small {
@@ -29,6 +31,21 @@
   line-height: 162%;
 }
 
+.button::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  background: rgb(255 255 255 / 30%);
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  transition:
+    width 0.6s,
+    height 0.6s;
+}
+
 .button--transparent {
   border: 1px solid var(--color-white);
   border-radius: 1px;
@@ -46,6 +63,27 @@
   transition: all 0.3s ease;
 }
 
+.button-text {
+  background-color: transparent; /* Прозрачный фон */
+  color: var(--color-white); /* Белый текст */
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 162%;
+  letter-spacing: -0.02em;
+  border: none; /* Убираем границу */
+  padding: 0; /* Убираем отступы */
+  width: auto; /* Автоматическая ширина */
+  height: auto; /* Автоматическая высота */
+  display: inline-flex;
+  align-items: center;
+  gap: 8px; /* Расстояние между текстом и стрелкой */
+  cursor: pointer;
+  align-self: flex-start; /* Выравнивание по левому краю */
+  margin-top: 17px; /* Отступ сверху после footer__info */
+  transition: all 0.3s ease;
+}
+
 .button::after {
   content: '';
   width: 20px;
@@ -54,4 +92,29 @@
   background-repeat: no-repeat;
   background-position: center;
   flex-shrink: 0;
+}
+
+.button:not(.button--transparent, .button-text):hover {
+  border: 1px solid var(--color-primary);
+  background-color: var(--color-white); /* Белый фон */
+  color: var(--color-primary); /* Синий текст */
+}
+
+.button:not(.button-text):hover::after {
+  background-image: url("data:image/svg+xml,%3Csvg width='20' height='10' viewBox='0 0 20 10' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M16.17 6L13.59 8.59L15 10L20 5L15 0L13.59 1.41L16.17 4H0V6H16.17Z' fill='%232E4FD7'/%3E%3C/svg%3E");
+}
+
+.button--transparent:hover {
+  background-color: var(--color-white); /* Белый фон */
+  color: var(--color-primary); /* Синий текст */
+  border: 1px solid var(--color-primary);
+}
+
+.button-text:hover {
+  opacity: 0.8;
+  transform: translateX(5px); /* Легкое смещение при наведении */
+}
+
+.button:hover::after {
+  transform: translateX(3px);
 }

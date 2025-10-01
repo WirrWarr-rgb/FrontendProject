@@ -19,7 +19,18 @@
         <!-- Виктория Лужникова -->
         <div class="container">
           <div class="navbar">
-            <div class="navbar__logo"></div>
+            <div class="navbar__logo">
+              <svg width="51" height="39" viewBox="0 0 51 39" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M51 5V38.75L28.5 21.875L6 5L51 5Z" fill="#46BA71" />
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M0 33.75L0 0L22.5 16.875L45 33.75L0 33.75Z"
+                  fill="#2E4FD7"
+                />
+              </svg>
+            </div>
+            <p class="navbar__title">Tweakful</p>
             <div class="navbar__menu">
               <ul>
                 <li>
@@ -58,7 +69,7 @@
             <div class="introduction">
               <div class="banner">
                 <h1 class="banner__title">
-                  This Headline Is Ihe Gist Of
+                  This Headline Is The Gist Of
                   <br />
                   The Your Whole Website That
                   <br />
@@ -66,17 +77,23 @@
                 </h1>
               </div>
               <div class="quote">
-                <p class="quote__text">
-                  “E-commerce shipping Pack collects different ways to do quick shopping, pay in a
-                  <br />
-                  second, and get all those stuff you need. There are smart delivery and polite
-                  <br />
-                  service in the scenes. Each of them is realized in cold and warm colors with
+                <p class="quote__text typewriter-multiline">
+                  <span class="typewriter-line"
+                    >“E-commerce shipping Pack collects different ways to do quick shopping, pay in a</span
+                  >
+                  <span class="typewriter-line"
+                    >second, and get all those stuff you need. There are smart delivery and polite</span
+                  >
+                  <span class="typewriter-line"
+                    >service in the scenes. Each of them is realized in cold and warm colors with</span
+                  >
                 </p>
                 <div class="quote__info">
                   <div class="quote__icon"></div>
-                  <p class="quote__name">Jesica Kumari</p>
-                  <p class="quote__job">CEO Of Acme Limited</p>
+                  <div class="quote__text-content">
+                    <p class="quote__name">Jesica Kumari</p>
+                    <p class="quote__job">CEO Of Acme Limited</p>
+                  </div>
                 </div>
               </div>
               <button class="button button--big">Explore More About This</button>
@@ -87,28 +104,34 @@
           <!-- Виктория Лужникова -->
           <div class="container">
             <div class="solutions">
-              <h2 class="solutions__title">
+              <h2 class="solutions__title fade-in">
                 Solutions that connect you to
                 <br />
                 your Prospects & Clients
               </h2>
               <div class="solutions__grid">
-                <div class="solutions__item">
+                <div class="solutions__item fade-in">
                   <div class="solutions__item-img">
-                    <svg width="10" height="32" viewBox="0 0 10 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path
-                        d="M1.33333 0H9.33333V32H1.33333C0.979711 32 0.640572 31.8595 0.390523 31.6095C0.140475 31.3594 0 31.0203 0 30.6667V1.33333C0 0.979711 0.140475 0.640572 0.390523 0.390523C0.640572 0.140475 0.979711 0 1.33333 0Z"
-                        fill="var(--color-primary)"
-                      />
-                    </svg>
-                    <svg width="10" height="32" viewBox="0 0 10 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path
-                        d="M0 0H8C8.35362 0 8.69276 0.140475 8.94281 0.390523C9.19286 0.640572 9.33333 0.979711 9.33333 1.33333V30.6667C9.33333 31.0203 9.19286 31.3594 8.94281 31.6095C8.69276 31.8595 8.35362 32 8 32H0V0Z"
-                        fill="var(--color-secondary)"
-                      />
-                    </svg>
-                    <svg width="8" height="16" viewBox="0 0 8 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M0 5.33333H8L4 0L0 5.33333ZM0 10.6667H8L4 16L0 10.6667Z" fill="var(--color-alt)" />
+                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <g clip-path="url(#clip0_224_9)">
+                        <path
+                          d="M24 13.3333H32L28 8L24 13.3333ZM24 18.6667H32L28 24L24 18.6667Z"
+                          fill="var(--color-alt)"
+                        />
+                        <path
+                          d="M1.33333 0H9.33333V32H1.33333C0.979711 32 0.640572 31.8595 0.390523 31.6095C0.140475 31.3594 0 31.0203 0 30.6667V1.33333C0 0.979711 0.140475 0.640572 0.390523 0.390523C0.640572 0.140475 0.979711 0 1.33333 0Z"
+                          fill="var(--color-secondary)"
+                        />
+                        <path
+                          d="M12 0H20C20.3536 0 20.6928 0.140475 20.9428 0.390523C21.1929 0.640572 21.3333 0.979711 21.3333 1.33333V30.6667C21.3333 31.0203 21.1929 31.3594 20.9428 31.6095C20.6928 31.8595 20.3536 32 20 32H12V0Z"
+                          fill="var(--color-primary)"
+                        />
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_224_9">
+                          <rect width="32" height="32" fill="white" />
+                        </clipPath>
+                      </defs>
                     </svg>
                   </div>
                   <h3 class="solutions__item-title">Mobile Application</h3>
@@ -117,23 +140,19 @@
                   </p>
                   <a class="solutions__item-link">Explore</a>
                 </div>
-                <div class="solutions__item">
+                <div class="solutions__item fade-in">
                   <div class="solutions__item-img">
-                    <svg width="30" height="7" viewBox="0 0 30 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path
-                        d="M29.6668 7.00004V1.66671C29.6668 1.31309 29.5264 0.973946 29.2763 0.723897C29.0263 0.473849 28.6871 0.333374 28.3335 0.333374H1.66683C1.31321 0.333374 0.974068 0.473849 0.724019 0.723897C0.473971 0.973946 0.333496 1.31309 0.333496 1.66671V7.00004H29.6668Z"
+                        d="M30.6668 8.00004V2.66671C30.6668 2.31309 30.5264 1.97395 30.2763 1.7239C30.0263 1.47385 29.6871 1.33337 29.3335 1.33337H2.66683C2.31321 1.33337 1.97407 1.47385 1.72402 1.7239C1.47397 1.97395 1.3335 2.31309 1.3335 2.66671V8.00004H30.6668Z"
                         fill="var(--color-secondary)"
                       />
-                    </svg>
-                    <svg width="9" height="21" viewBox="0 0 9 21" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path
-                        d="M0.333496 0.666748V19.3334C0.333496 19.687 0.473971 20.0262 0.724019 20.2762C0.974068 20.5263 1.31321 20.6667 1.66683 20.6667H8.3335V0.666748H0.333496Z"
+                        d="M1.3335 10.6667V29.3334C1.3335 29.687 1.47397 30.0262 1.72402 30.2762C1.97407 30.5263 2.31321 30.6667 2.66683 30.6667H9.3335V10.6667H1.3335Z"
                         fill="var(--color-alt)"
                       />
-                    </svg>
-                    <svg width="19" height="21" viewBox="0 0 19 21" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path
-                        d="M0 20.6667H17.3333C17.687 20.6667 18.0261 20.5263 18.2761 20.2762C18.5262 20.0262 18.6667 19.687 18.6667 19.3334V0.666748H0V20.6667Z"
+                        d="M12 30.6667H29.3333C29.687 30.6667 30.0261 30.5263 30.2761 30.2762C30.5262 30.0262 30.6667 29.687 30.6667 29.3334V10.6667H12V30.6667Z"
                         fill="var(--color-primary)"
                       />
                     </svg>
@@ -144,24 +163,20 @@
                   </p>
                   <a class="solutions__item-link">Explore</a>
                 </div>
-                <div class="solutions__item">
+                <div class="solutions__item fade-in">
                   <div class="solutions__item-img">
-                    <svg width="28" height="6" viewBox="0 0 28 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path
-                        d="M25.9998 0H1.99984C1.64622 0 1.30708 0.140475 1.05703 0.390523C0.806979 0.640572 0.666504 0.979711 0.666504 1.33333V4C0.666504 4.35362 0.806979 4.69276 1.05703 4.94281C1.30708 5.19286 1.64622 5.33333 1.99984 5.33333H25.9998C26.3535 5.33333 26.6926 5.19286 26.9426 4.94281C27.1927 4.69276 27.3332 4.35362 27.3332 4V1.33333C27.3332 0.979711 27.1927 0.640572 26.9426 0.390523C26.6926 0.140475 26.3535 0 25.9998 0Z"
+                        d="M27.9998 32H15.9998C15.6462 32 15.3071 31.8595 15.057 31.6094C14.807 31.3594 14.6665 31.0202 14.6665 30.6666V28C14.6665 27.6463 14.807 27.3072 15.057 27.0571C15.3071 26.8071 15.6462 26.6666 15.9998 26.6666H27.9998C28.3535 26.6666 28.6926 26.8071 28.9426 27.0571C29.1927 27.3072 29.3332 27.6463 29.3332 28V30.6666C29.3332 31.0202 29.1927 31.3594 28.9426 31.6094C28.6926 31.8595 28.3535 32 27.9998 32Z"
+                        fill="var(--color-alt)"
+                      />
+                      <path
+                        d="M27.9998 0H3.99984C3.64622 0 3.30708 0.140475 3.05703 0.390523C2.80698 0.640572 2.6665 0.979711 2.6665 1.33333V4C2.6665 4.35362 2.80698 4.69276 3.05703 4.94281C3.30708 5.19286 3.64622 5.33333 3.99984 5.33333H27.9998C28.3535 5.33333 28.6926 5.19286 28.9426 4.94281C29.1927 4.69276 29.3332 4.35362 29.3332 4V1.33333C29.3332 0.979711 29.1927 0.640572 28.9426 0.390523C28.6926 0.140475 28.3535 0 27.9998 0Z"
                         fill="var(--color-secondary)"
                       />
-                    </svg>
-                    <svg width="28" height="16" viewBox="0 0 28 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path
-                        d="M25.9998 0H1.99984C1.64622 0 1.30708 0.140475 1.05703 0.390523C0.806979 0.640572 0.666504 0.979711 0.666504 1.33333V14.6667C0.666504 15.0203 0.806979 15.3594 1.05703 15.6095C1.30708 15.8595 1.64622 16 1.99984 16H25.9998C26.3535 16 26.6926 15.8595 26.9426 15.6095C27.1927 15.3594 27.3332 15.0203 27.3332 14.6667V1.33333C27.3332 0.979711 27.1927 0.640572 26.9426 0.390523C26.6926 0.140475 26.3535 0 25.9998 0Z"
+                        d="M27.9998 8H3.99984C3.64622 8 3.30708 8.14047 3.05703 8.39052C2.80698 8.64057 2.6665 8.97971 2.6665 9.33333V22.6667C2.6665 23.0203 2.80698 23.3594 3.05703 23.6095C3.30708 23.8595 3.64622 24 3.99984 24H27.9998C28.3535 24 28.6926 23.8595 28.9426 23.6095C29.1927 23.3594 29.3332 23.0203 29.3332 22.6667V9.33333C29.3332 8.97971 29.1927 8.64057 28.9426 8.39052C28.6926 8.14047 28.3535 8 27.9998 8Z"
                         fill="var(--color-primary)"
-                      />
-                    </svg>
-                    <svg width="16" height="6" viewBox="0 0 16 6" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path
-                        d="M13.9998 5.99996H1.99984C1.64622 5.99996 1.30708 5.85949 1.05703 5.60944C0.806979 5.35939 0.666504 5.02025 0.666504 4.66663V1.99996C0.666504 1.64634 0.806979 1.3072 1.05703 1.05715C1.30708 0.807101 1.64622 0.666626 1.99984 0.666626H13.9998C14.3535 0.666626 14.6926 0.807101 14.9426 1.05715C15.1927 1.3072 15.3332 1.64634 15.3332 1.99996V4.66663C15.3332 5.02025 15.1927 5.35939 14.9426 5.60944C14.6926 5.85949 14.3535 5.99996 13.9998 5.99996Z"
-                        fill="var(--color-alt)"
                       />
                     </svg>
                   </div>
@@ -171,23 +186,19 @@
                   </p>
                   <a class="solutions__item-link">Explore</a>
                 </div>
-                <div class="solutions__item">
+                <div class="solutions__item fade-in">
                   <div class="solutions__item-img">
-                    <svg width="6" height="30" viewBox="0 0 6 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path
-                        d="M5.66683 0.333374H1.66683C1.31321 0.333374 0.974068 0.473849 0.724019 0.723897C0.473971 0.973946 0.333496 1.31309 0.333496 1.66671V28.3334C0.333496 28.687 0.473971 29.0261 0.724019 29.2762C0.974068 29.5262 1.31321 29.6667 1.66683 29.6667H5.66683V0.333374Z"
+                        d="M6.66683 1.33337H2.66683C2.31321 1.33337 1.97407 1.47385 1.72402 1.7239C1.47397 1.97395 1.3335 2.31309 1.3335 2.66671V29.3334C1.3335 29.687 1.47397 30.0261 1.72402 30.2762C1.97407 30.5262 2.31321 30.6667 2.66683 30.6667H6.66683V1.33337Z"
                         fill="var(--color-secondary)"
                       />
-                    </svg>
-                    <svg width="14" height="30" viewBox="0 0 14 30" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path
-                        d="M0.333496 29.6667H13.6668V0.333374H0.333496V29.6667ZM7.00016 24.3334C6.64654 24.3334 6.3074 24.1929 6.05735 23.9429C5.8073 23.6928 5.66683 23.3537 5.66683 23C5.66683 22.6464 5.8073 22.3073 6.05735 22.0572C6.3074 21.8072 6.64654 21.6667 7.00016 21.6667C7.35378 21.6667 7.69292 21.8072 7.94297 22.0572C8.19302 22.3073 8.3335 22.6464 8.3335 23C8.3335 23.3537 8.19302 23.6928 7.94297 23.9429C7.69292 24.1929 7.35378 24.3334 7.00016 24.3334ZM7.00016 5.66671C7.35378 5.66671 7.69292 5.80718 7.94297 6.05723C8.19302 6.30728 8.3335 6.64642 8.3335 7.00004C8.3335 7.35366 8.19302 7.6928 7.94297 7.94285C7.69292 8.1929 7.35378 8.33337 7.00016 8.33337C6.64654 8.33337 6.3074 8.1929 6.05735 7.94285C5.8073 7.6928 5.66683 7.35366 5.66683 7.00004C5.66683 6.64642 5.8073 6.30728 6.05735 6.05723C6.3074 5.80718 6.64654 5.66671 7.00016 5.66671ZM7.00016 13.6667C7.35378 13.6667 7.69292 13.8072 7.94297 14.0572C8.19302 14.3073 8.3335 14.6464 8.3335 15C8.3335 15.3537 8.19302 15.6928 7.94297 15.9429C7.69292 16.1929 7.35378 16.3334 7.00016 16.3334C6.64654 16.3334 6.3074 16.1929 6.05735 15.9429C5.8073 15.6928 5.66683 15.3537 5.66683 15C5.66683 14.6464 5.8073 14.3073 6.05735 14.0572C6.3074 13.8072 6.64654 13.6667 7.00016 13.6667Z"
+                        d="M9.3335 30.6667H22.6668V1.33337H9.3335V30.6667ZM16.0002 25.3334C15.6465 25.3334 15.3074 25.1929 15.0574 24.9429C14.8073 24.6928 14.6668 24.3537 14.6668 24C14.6668 23.6464 14.8073 23.3073 15.0574 23.0572C15.3074 22.8072 15.6465 22.6667 16.0002 22.6667C16.3538 22.6667 16.6929 22.8072 16.943 23.0572C17.193 23.3073 17.3335 23.6464 17.3335 24C17.3335 24.3537 17.193 24.6928 16.943 24.9429C16.6929 25.1929 16.3538 25.3334 16.0002 25.3334ZM16.0002 6.66671C16.3538 6.66671 16.6929 6.80718 16.943 7.05723C17.193 7.30728 17.3335 7.64642 17.3335 8.00004C17.3335 8.35366 17.193 8.6928 16.943 8.94285C16.6929 9.1929 16.3538 9.33337 16.0002 9.33337C15.6465 9.33337 15.3074 9.1929 15.0574 8.94285C14.8073 8.6928 14.6668 8.35366 14.6668 8.00004C14.6668 7.64642 14.8073 7.30728 15.0574 7.05723C15.3074 6.80718 15.6465 6.66671 16.0002 6.66671ZM16.0002 14.6667C16.3538 14.6667 16.6929 14.8072 16.943 15.0572C17.193 15.3073 17.3335 15.6464 17.3335 16C17.3335 16.3537 17.193 16.6928 16.943 16.9429C16.6929 17.1929 16.3538 17.3334 16.0002 17.3334C15.6465 17.3334 15.3074 17.1929 15.0574 16.9429C14.8073 16.6928 14.6668 16.3537 14.6668 16C14.6668 15.6464 14.8073 15.3073 15.0574 15.0572C15.3074 14.8072 15.6465 14.6667 16.0002 14.6667Z"
                         fill="var(--color-primary)"
                       />
-                    </svg>
-                    <svg width="6" height="30" viewBox="0 0 6 30" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path
-                        d="M4.3335 0.333374H0.333496V29.6667H4.3335C4.68712 29.6667 5.02626 29.5262 5.27631 29.2762C5.52635 29.0261 5.66683 28.687 5.66683 28.3334V1.66671C5.66683 1.31309 5.52635 0.973946 5.27631 0.723897C5.02626 0.473849 4.68712 0.333374 4.3335 0.333374Z"
+                        d="M29.3335 1.33337H25.3335V30.6667H29.3335C29.6871 30.6667 30.0263 30.5262 30.2763 30.2762C30.5264 30.0261 30.6668 29.687 30.6668 29.3334V2.66671C30.6668 2.31309 30.5264 1.97395 30.2763 1.7239C30.0263 1.47385 29.6871 1.33337 29.3335 1.33337Z"
                         fill="var(--color-alt)"
                       />
                     </svg>
@@ -198,21 +209,17 @@
                   </p>
                   <a class="solutions__item-link">Explore</a>
                 </div>
-                <div class="solutions__item">
+                <div class="solutions__item fade-in">
                   <div class="solutions__item-img">
-                    <svg width="10" height="30" viewBox="0 0 10 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path
-                        d="M9.33333 0.600098L0.933334 3.0001C0.400001 3.26676 0 3.8001 0 4.33343V28.3334C0 28.7334 0.133333 29.1334 0.533333 29.4001C0.799999 29.5334 1.06667 29.6668 1.33333 29.6668H1.73333L9.33333 27.4001V0.600098Z"
-                        fill="var(--color-primary)"
-                      />
-                    </svg>
-                    <svg width="8" height="30" viewBox="0 0 8 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M8 2.6001L0 0.600098V27.4001L8 29.4001V2.6001Z" fill="var(--color-secondary)" />
-                    </svg>
-                    <svg width="10" height="30" viewBox="0 0 10 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path
-                        d="M9.4665 0.600042C9.19984 0.333375 8.6665 0.333374 8.26651 0.333374L0.666504 2.60004V29.4L9.0665 27C9.59984 26.8667 9.99984 26.3334 9.99984 25.6667V1.66671C9.99984 1.26671 9.8665 0.866708 9.4665 0.600042Z"
+                        d="M31.4665 1.60004C31.1998 1.33338 30.6665 1.33337 30.2665 1.33337L22.6665 3.60004V30.4L31.0665 28C31.5998 27.8667 31.9998 27.3334 31.9998 26.6667V2.66671C31.9998 2.26671 31.8665 1.86671 31.4665 1.60004Z"
                         fill="var(--color-alt)"
+                      />
+                      <path d="M20 3.6001L12 1.6001V28.4001L20 30.4001V3.6001Z" fill="var(--color-secondary)" />
+                      <path
+                        d="M9.33333 1.6001L0.933334 4.0001C0.400001 4.26676 0 4.8001 0 5.33343V29.3334C0 29.7334 0.133333 30.1334 0.533333 30.4001C0.799999 30.5334 1.06667 30.6668 1.33333 30.6668H1.73333L9.33333 28.4001V1.6001Z"
+                        fill="var(--color-primary)"
                       />
                     </svg>
                   </div>
@@ -222,31 +229,21 @@
                   </p>
                   <a class="solutions__item-link">Explore</a>
                 </div>
-                <div class="solutions__item">
+                <div class="solutions__item fade-in">
                   <div class="solutions__item-img">
-                    <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path
-                        d="M11.0002 12.3334H1.66683C1.31321 12.3334 0.974068 12.1929 0.724019 11.9429C0.473971 11.6928 0.333496 11.3537 0.333496 11V1.66671C0.333496 1.31309 0.473971 0.973946 0.724019 0.723897C0.974068 0.473849 1.31321 0.333374 1.66683 0.333374H11.0002C11.3538 0.333374 11.6929 0.473849 11.943 0.723897C12.193 0.973946 12.3335 1.31309 12.3335 1.66671V11C12.3335 11.3537 12.193 11.6928 11.943 11.9429C11.6929 12.1929 11.3538 12.3334 11.0002 12.3334Z"
+                        d="M12.0002 13.3334H2.66683C2.31321 13.3334 1.97407 13.1929 1.72402 12.9429C1.47397 12.6928 1.3335 12.3537 1.3335 12V2.66671C1.3335 2.31309 1.47397 1.97395 1.72402 1.7239C1.97407 1.47385 2.31321 1.33337 2.66683 1.33337H12.0002C12.3538 1.33337 12.6929 1.47385 12.943 1.7239C13.193 1.97395 13.3335 2.31309 13.3335 2.66671V12C13.3335 12.3537 13.193 12.6928 12.943 12.9429C12.6929 13.1929 12.3538 13.3334 12.0002 13.3334Z"
                         fill="var(--color-primary)"
                       />
-                    </svg>
-                    <svg width="14" height="4" viewBox="0 0 14 4" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M0.333496 0.666748H13.6668V3.33341H0.333496V0.666748Z" fill="var(--color-secondary)" />
-                    </svg>
-                    <svg width="14" height="3" viewBox="0 0 14 3" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M13.6668 0.333374H0.333496V3.00004H13.6668V0.333374Z" fill="var(--color-alt)" />
-                    </svg>
-                    <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path
-                        d="M11.0002 12.6667H1.66683C1.31321 12.6667 0.974068 12.5263 0.724019 12.2762C0.473971 12.0262 0.333496 11.687 0.333496 11.3334V2.00008C0.333496 1.64646 0.473971 1.30732 0.724019 1.05727C0.974068 0.807223 1.31321 0.666748 1.66683 0.666748H11.0002C11.3538 0.666748 11.6929 0.807223 11.943 1.05727C12.193 1.30732 12.3335 1.64646 12.3335 2.00008V11.3334C12.3335 11.687 12.193 12.0262 11.943 12.2762C11.6929 12.5263 11.3538 12.6667 11.0002 12.6667Z"
+                        d="M12.0002 30.6667H2.66683C2.31321 30.6667 1.97407 30.5263 1.72402 30.2762C1.47397 30.0262 1.3335 29.687 1.3335 29.3334V20.0001C1.3335 19.6465 1.47397 19.3073 1.72402 19.0573C1.97407 18.8072 2.31321 18.6667 2.66683 18.6667H12.0002C12.3538 18.6667 12.6929 18.8072 12.943 19.0573C13.193 19.3073 13.3335 19.6465 13.3335 20.0001V29.3334C13.3335 29.687 13.193 30.0262 12.943 30.2762C12.6929 30.5263 12.3538 30.6667 12.0002 30.6667Z"
                         fill="var(--color-primary)"
                       />
-                    </svg>
-                    <svg width="14" height="3" viewBox="0 0 14 3" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M13.6668 0H0.333496V2.66667H13.6668V0Z" fill="var(--color-secondary)" />
-                    </svg>
-                    <svg width="14" height="4" viewBox="0 0 14 4" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M13.6668 0.666748H0.333496V3.33342H13.6668V0.666748Z" fill="var(--color-alt)" />
+                      <path d="M17.3335 2.66675H30.6668V5.33341H17.3335V2.66675Z" fill="var(--color-secondary)" />
+                      <path d="M30.6668 20H17.3335V22.6667H30.6668V20Z" fill="var(--color-secondary)" />
+                      <path d="M30.6668 26.6667H17.3335V29.3334H30.6668V26.6667Z" fill="var(--color-alt)" />
+                      <path d="M30.6668 9.33337H17.3335V12H30.6668V9.33337Z" fill="var(--color-alt)" />
                     </svg>
                   </div>
                   <h3 class="solutions__item-title">Project Management</h3>
@@ -256,123 +253,123 @@
                   <a class="solutions__item-link">Explore</a>
                 </div>
               </div>
-              <button class="button button--transparent">Button Text</button>
+              <button class="button button--transparent fade-in">Button Text</button>
             </div>
           </div>
         </div>
         <div class="page__benefits">
           <!-- Виктория Лужникова -->
           <div class="container">
-            <div class="benefits">
+            <div class="benefits fade-in">
               <h2 class="benefits__title">Benefits of working with us</h2>
-            </div>
-            <div class="benefits__grid">
-              <div class="benefits__item">
-                <div class="benefits__item-icon">
-                  <div class="benefits__item-icon-inner">
-                    <svg width="7" height="24" viewBox="0 0 7 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path
-                        d="M1 0H7V24H1C0.734784 24 0.480429 23.8946 0.292892 23.7071C0.105356 23.5196 0 23.2652 0 23V1C0 0.734784 0.105356 0.480429 0.292892 0.292892C0.480429 0.105356 0.734784 0 1 0Z"
-                        fill="var(--color-primary)"
-                      />
-                    </svg>
-                    <svg width="7" height="24" viewBox="0 0 7 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path
-                        d="M0 0H6C6.26522 0 6.51957 0.105356 6.70711 0.292892C6.89464 0.480429 7 0.734784 7 1V23C7 23.2652 6.89464 23.5196 6.70711 23.7071C6.51957 23.8946 6.26522 24 6 24H0V0Z"
-                        fill="var(--color-secondary)"
-                      />
-                    </svg>
-                    <svg width="6" height="12" viewBox="0 0 6 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M0 4H6L3 0L0 4ZM0 8H6L3 12L0 8Z" fill="var(--color-alt)" />
-                    </svg>
+              <div class="benefits__grid">
+                <div class="benefits__item">
+                  <div class="benefits__item-icon">
+                    <div class="benefits__item-icon-inner">
+                      <svg width="7" height="24" viewBox="0 0 7 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M1 0H7V24H1C0.734784 24 0.480429 23.8946 0.292892 23.7071C0.105356 23.5196 0 23.2652 0 23V1C0 0.734784 0.105356 0.480429 0.292892 0.292892C0.480429 0.105356 0.734784 0 1 0Z"
+                          fill="var(--color-primary)"
+                        />
+                      </svg>
+                      <svg width="7" height="24" viewBox="0 0 7 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M0 0H6C6.26522 0 6.51957 0.105356 6.70711 0.292892C6.89464 0.480429 7 0.734784 7 1V23C7 23.2652 6.89464 23.5196 6.70711 23.7071C6.51957 23.8946 6.26522 24 6 24H0V0Z"
+                          fill="var(--color-secondary)"
+                        />
+                      </svg>
+                      <svg width="6" height="12" viewBox="0 0 6 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0 4H6L3 0L0 4ZM0 8H6L3 12L0 8Z" fill="var(--color-alt)" />
+                      </svg>
+                    </div>
+                  </div>
+                  <div class="benefits__item-content">
+                    <h3 class="benefits__item-title">Time zones ain’t no thing</h3>
+                    <p class="benefits__item-desc">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mattis et sed nam sem tellus erat.
+                    </p>
                   </div>
                 </div>
-                <div class="benefits__item-content">
-                  <h3 class="benefits__item-title">Time zones ain’t no thing</h3>
-                  <p class="benefits__item-desc">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mattis et sed nam sem tellus erat.
-                  </p>
-                </div>
-              </div>
-              <div class="benefits__item">
-                <div class="benefits__item-icon">
-                  <div class="benefits__item-icon-inner">
-                    <svg width="20" height="4" viewBox="0 0 20 4" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path
-                        d="M19 0H1C0.734784 0 0.480429 0.105356 0.292892 0.292892C0.105356 0.480429 0 0.734784 0 1V3C0 3.26522 0.105356 3.51957 0.292892 3.70711C0.480429 3.89464 0.734784 4 1 4H19C19.2652 4 19.5196 3.89464 19.7071 3.70711C19.8946 3.51957 20 3.26522 20 3V1C20 0.734784 19.8946 0.480429 19.7071 0.292892C19.5196 0.105356 19.2652 0 19 0Z"
-                        fill="var(--color-secondary)"
-                      />
-                    </svg>
-                    <svg width="20" height="12" viewBox="0 0 20 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path
-                        d="M19 0H1C0.734784 0 0.480429 0.105356 0.292892 0.292892C0.105356 0.480429 0 0.734784 0 1V11C0 11.2652 0.105356 11.5196 0.292892 11.7071C0.480429 11.8946 0.734784 12 1 12H19C19.2652 12 19.5196 11.8946 19.7071 11.7071C19.8946 11.5196 20 11.2652 20 11V1C20 0.734784 19.8946 0.480429 19.7071 0.292892C19.5196 0.105356 19.2652 0 19 0Z"
-                        fill="var(--color-primary)"
-                      />
-                    </svg>
-                    <svg width="11" height="4" viewBox="0 0 11 4" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path
-                        d="M10 4H1C0.734784 4 0.480429 3.89464 0.292892 3.70711C0.105356 3.51957 0 3.26522 0 3V1C0 0.734784 0.105356 0.480429 0.292892 0.292892C0.480429 0.105356 0.734784 0 1 0H10C10.2652 0 10.5196 0.105356 10.7071 0.292892C10.8946 0.480429 11 0.734784 11 1V3C11 3.26522 10.8946 3.51957 10.7071 3.70711C10.5196 3.89464 10.2652 4 10 4Z"
-                        fill="var(--color-alt)"
-                      />
-                    </svg>
+                <div class="benefits__item">
+                  <div class="benefits__item-icon">
+                    <div class="benefits__item-icon-inner">
+                      <svg width="20" height="4" viewBox="0 0 20 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M19 0H1C0.734784 0 0.480429 0.105356 0.292892 0.292892C0.105356 0.480429 0 0.734784 0 1V3C0 3.26522 0.105356 3.51957 0.292892 3.70711C0.480429 3.89464 0.734784 4 1 4H19C19.2652 4 19.5196 3.89464 19.7071 3.70711C19.8946 3.51957 20 3.26522 20 3V1C20 0.734784 19.8946 0.480429 19.7071 0.292892C19.5196 0.105356 19.2652 0 19 0Z"
+                          fill="var(--color-secondary)"
+                        />
+                      </svg>
+                      <svg width="20" height="12" viewBox="0 0 20 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M19 0H1C0.734784 0 0.480429 0.105356 0.292892 0.292892C0.105356 0.480429 0 0.734784 0 1V11C0 11.2652 0.105356 11.5196 0.292892 11.7071C0.480429 11.8946 0.734784 12 1 12H19C19.2652 12 19.5196 11.8946 19.7071 11.7071C19.8946 11.5196 20 11.2652 20 11V1C20 0.734784 19.8946 0.480429 19.7071 0.292892C19.5196 0.105356 19.2652 0 19 0Z"
+                          fill="var(--color-primary)"
+                        />
+                      </svg>
+                      <svg width="11" height="4" viewBox="0 0 11 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M10 4H1C0.734784 4 0.480429 3.89464 0.292892 3.70711C0.105356 3.51957 0 3.26522 0 3V1C0 0.734784 0.105356 0.480429 0.292892 0.292892C0.480429 0.105356 0.734784 0 1 0H10C10.2652 0 10.5196 0.105356 10.7071 0.292892C10.8946 0.480429 11 0.734784 11 1V3C11 3.26522 10.8946 3.51957 10.7071 3.70711C10.5196 3.89464 10.2652 4 10 4Z"
+                          fill="var(--color-alt)"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                  <div class="benefits__item-content">
+                    <h3 class="benefits__item-title">Full spectrum of services</h3>
+                    <p class="benefits__item-desc">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mattis et sed nam sem tellus erat.
+                    </p>
                   </div>
                 </div>
-                <div class="benefits__item-content">
-                  <h3 class="benefits__item-title">Full spectrum of services</h3>
-                  <p class="benefits__item-desc">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mattis et sed nam sem tellus erat.
-                  </p>
-                </div>
-              </div>
-              <div class="benefits__item">
-                <div class="benefits__item-icon">
-                  <div class="benefits__item-icon-inner">
-                    <svg width="7" height="22" viewBox="0 0 7 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path
-                        d="M7 0.199951L0.700001 1.99995C0.300001 2.19995 0 2.59995 0 2.99995V21C0 21.2999 0.0999996 21.5999 0.4 21.7999C0.6 21.9 0.8 22 1 22H1.3L7 20.2999V0.199951Z"
-                        fill="var(--color-primary)"
-                      />
-                    </svg>
-                    <svg width="6" height="22" viewBox="0 0 6 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M6 1.69995L0 0.199951V20.2999L6 21.7999V1.69995Z" fill="var(--color-secondary)" />
-                    </svg>
-                    <svg width="7" height="22" viewBox="0 0 7 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path
-                        d="M6.6 0.200001C6.4 7.59959e-07 6 0 5.7 0L0 1.7V21.8L6.3 20C6.7 19.9 7 19.5 7 19V1C7 0.7 6.9 0.400001 6.6 0.200001Z"
-                        fill="var(--color-alt)"
-                      />
-                    </svg>
+                <div class="benefits__item">
+                  <div class="benefits__item-icon">
+                    <div class="benefits__item-icon-inner">
+                      <svg width="7" height="22" viewBox="0 0 7 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M7 0.199951L0.700001 1.99995C0.300001 2.19995 0 2.59995 0 2.99995V21C0 21.2999 0.0999996 21.5999 0.4 21.7999C0.6 21.9 0.8 22 1 22H1.3L7 20.2999V0.199951Z"
+                          fill="var(--color-primary)"
+                        />
+                      </svg>
+                      <svg width="6" height="22" viewBox="0 0 6 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M6 1.69995L0 0.199951V20.2999L6 21.7999V1.69995Z" fill="var(--color-secondary)" />
+                      </svg>
+                      <svg width="7" height="22" viewBox="0 0 7 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M6.6 0.200001C6.4 7.59959e-07 6 0 5.7 0L0 1.7V21.8L6.3 20C6.7 19.9 7 19.5 7 19V1C7 0.7 6.9 0.400001 6.6 0.200001Z"
+                          fill="var(--color-alt)"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                  <div class="benefits__item-content">
+                    <h3 class="benefits__item-title">Impossible? We’re on it</h3>
+                    <p class="benefits__item-desc">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mattis et sed nam sem tellus erat.
+                    </p>
                   </div>
                 </div>
-                <div class="benefits__item-content">
-                  <h3 class="benefits__item-title">Impossible? We’re on it</h3>
-                  <p class="benefits__item-desc">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mattis et sed nam sem tellus erat.
-                  </p>
-                </div>
-              </div>
-              <div class="benefits__item">
-                <div class="benefits__item-icon">
-                  <div class="benefits__item-icon-inner">
-                    <svg width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path
-                        d="M8 9H1C0.734784 9 0.480429 8.89464 0.292892 8.70711C0.105356 8.51957 0 8.26522 0 8V1C0 0.734784 0.105356 0.480429 0.292892 0.292892C0.480429 0.105356 0.734784 0 1 0H8C8.26522 0 8.51957 0.105356 8.70711 0.292892C8.89464 0.480429 9 0.734784 9 1V8C9 8.26522 8.89464 8.51957 8.70711 8.70711C8.51957 8.89464 8.26522 9 8 9Z"
-                        fill="var(--color-primary)"
-                      />
-                    </svg>
-                    <svg width="10" height="2" viewBox="0 0 10 2" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M0 0H10V2H0V0Z" fill="var(--color-secondary)" />
-                    </svg>
-                    <svg width="10" height="2" viewBox="0 0 10 2" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M10 0H0V2H10V0Z" fill="var(--color-alt)" />
-                    </svg>
+                <div class="benefits__item">
+                  <div class="benefits__item-icon">
+                    <div class="benefits__item-icon-inner">
+                      <svg width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M8 9H1C0.734784 9 0.480429 8.89464 0.292892 8.70711C0.105356 8.51957 0 8.26522 0 8V1C0 0.734784 0.105356 0.480429 0.292892 0.292892C0.480429 0.105356 0.734784 0 1 0H8C8.26522 0 8.51957 0.105356 8.70711 0.292892C8.89464 0.480429 9 0.734784 9 1V8C9 8.26522 8.89464 8.51957 8.70711 8.70711C8.51957 8.89464 8.26522 9 8 9Z"
+                          fill="var(--color-primary)"
+                        />
+                      </svg>
+                      <svg width="10" height="2" viewBox="0 0 10 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0 0H10V2H0V0Z" fill="var(--color-secondary)" />
+                      </svg>
+                      <svg width="10" height="2" viewBox="0 0 10 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M10 0H0V2H10V0Z" fill="var(--color-alt)" />
+                      </svg>
+                    </div>
                   </div>
-                </div>
-                <div class="benefits__item-content">
-                  <h3 class="benefits__item-title">Flexible work terms</h3>
-                  <p class="benefits__item-desc">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mattis et sed nam sem tellus erat.
-                  </p>
+                  <div class="benefits__item-content">
+                    <h3 class="benefits__item-title">Flexible work terms</h3>
+                    <p class="benefits__item-desc">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mattis et sed nam sem tellus erat.
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -398,7 +395,7 @@
       <div class="page__footer">
         <!-- Виктория Лужникова -->
         <div class="container">
-          <div class="footer">
+          <div class="footer fade-in">
             <h1 class="footer__title">Tweakful</h1>
             <div class="footer__info">
               <div class="footer__about">
@@ -410,59 +407,44 @@
                 </p>
               </div>
               <div class="footer__links-menu">
-                <ul>
-                  <li>
-                    <a class="footer__links">Contacts</a>
-                  </li>
-                </ul>
-                <ul>
-                  <li>
-                    <a class="footer__links">Career</a>
-                  </li>
-                </ul>
-                <ul>
-                  <li>
-                    <a class="footer__links">Privacy Plocy</a>
-                  </li>
-                </ul>
-                <ul>
-                  <li>
-                    <a class="footer__links">Terms Of Services</a>
-                  </li>
-                </ul>
-                <ul>
-                  <li>
-                    <a class="footer__links">GDPR</a>
-                  </li>
-                </ul>
-                <ul>
-                  <li>
-                    <a class="footer__links">FAQs</a>
-                  </li>
-                </ul>
-                <ul>
-                  <li>
-                    <a class="footer__links">Blog</a>
-                  </li>
-                </ul>
-                <ul>
-                  <li>
-                    <a class="footer__links">Capabilities</a>
-                  </li>
-                </ul>
-                <ul>
-                  <li>
-                    <a class="footer__links">Resources</a>
-                  </li>
-                </ul>
-                <ul>
-                  <li>
-                    <a class="footer__links">Partnership Integration </a>
-                  </li>
-                </ul>
+                <div class="links-row">
+                  <ul>
+                    <li><a class="footer__links">Contacts</a></li>
+                  </ul>
+                  <ul>
+                    <li><a class="footer__links">Career</a></li>
+                  </ul>
+                  <ul>
+                    <li><a class="footer__links">Privacy Policy</a></li>
+                  </ul>
+                  <ul>
+                    <li><a class="footer__links">Terms Of Services</a></li>
+                  </ul>
+                  <ul>
+                    <li><a class="footer__links">GDPR</a></li>
+                  </ul>
+                  <ul>
+                    <li><a class="footer__links">FAQs</a></li>
+                  </ul>
+                </div>
+                <div class="links-row">
+                  <ul>
+                    <li><a class="footer__links">Blog</a></li>
+                  </ul>
+                  <ul>
+                    <li><a class="footer__links">Capabilities</a></li>
+                  </ul>
+                  <ul>
+                    <li><a class="footer__links">Resources</a></li>
+                  </ul>
+                  <ul>
+                    <li><a class="footer__links">Partnership Integration</a></li>
+                  </ul>
+                </div>
               </div>
-              <button class="button button-text">Button Text</button>
             </div>
+            <button class="button button-text">Button Text</button>
+            <div class="footer__divider"></div>
             <div class="footer__сopyrights">
               <p class="footer__сopyrights-text">
                 B2B website and engagement design solution that transform
@@ -477,4 +459,21 @@
     </div>
     <script type="module" src="/src/index.js"></script>
   </body>
+  <script>
+    const observerOptions = {
+      threshold: 0.1,
+      rootMargin: '0px 0px -50px 0px',
+    };
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, observerOptions);
+
+    document.querySelectorAll('.fade-in, .slide-left, .slide-right').forEach((el) => {
+      observer.observe(el);
+    });
+  </script>
 </html>

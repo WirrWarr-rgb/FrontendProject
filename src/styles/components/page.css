@@ -48,3 +48,11 @@
   width: 1440px;
   height: 600px;
 }
+
+.page__footer {
+  flex-shrink: 0;
+  background-color: var(--color-bg-dark);
+  width: 1440px;
+  height: 408px;
+  padding: 70px 135px 44px;
+}

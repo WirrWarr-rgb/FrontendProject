@@ -1,0 +1,158 @@
+/* Появление элементов */
+
+/* Базовые стили для анимированных элементов */
+.fade-in {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.8s ease;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Для разных направлений */
+.slide-left {
+  opacity: 0;
+  transform: translateX(-50px);
+  transition: all 0.8s ease;
+}
+
+.slide-right {
+  opacity: 0;
+  transform: translateX(50px);
+  transition: all 0.8s ease;
+}
+
+.slide-left.visible,
+.slide-right.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* Задержки для последовательного появления */
+.delay-1 {
+  transition-delay: 0.1s;
+}
+
+.delay-2 {
+  transition-delay: 0.2s;
+}
+
+.delay-3 {
+  transition-delay: 0.3s;
+}
+
+/* Появление текста */
+
+.typewriter-multiline {
+  position: relative;
+  overflow: hidden;
+}
+
+.typewriter-line {
+  display: block;
+  overflow: hidden;
+  white-space: nowrap;
+  width: 0;
+  animation: typing 2s steps(40, end) forwards;
+}
+
+.typewriter-line:nth-child(1) {
+  animation-delay: 0s;
+}
+
+.typewriter-line:nth-child(2) {
+  animation-delay: 2s;
+}
+
+.typewriter-line:nth-child(3) {
+  animation-delay: 4s;
+}
+
+.typewriter-cursor {
+  position: absolute;
+  width: 2px;
+  height: 1em;
+  background-color: var(--color-primary);
+  opacity: 0;
+  animation: cursor-sequence 6.1s linear forwards;
+}
+
+@keyframes typing {
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes cursor-sequence {
+  /* Начало - скрыт */
+  0% {
+    opacity: 0;
+  }
+
+  /* Первая строка */
+  1% {
+    top: 0;
+    left: 0;
+    opacity: 1;
+    animation: blink-caret 0.75s step-end infinite;
+  }
+
+  33% {
+    top: 0;
+    left: 100%;
+  }
+
+  /* Скрываем перед переходом */
+  34% {
+    opacity: 0;
+  }
+
+  /* Вторая строка */
+  35% {
+    top: 1.2em;
+    left: 0;
+    opacity: 1;
+  }
+
+  66% {
+    top: 1.2em;
+    left: 100%;
+  }
+
+  /* Скрываем перед переходом */
+  67% {
+    opacity: 0;
+  }
+
+  /* Третья строка */
+  68% {
+    top: 2.4em;
+    left: 0;
+    opacity: 1;
+  }
+
+  99% {
+    top: 2.4em;
+    left: 100%;
+  }
+
+  /* Конец - скрываем навсегда */
+  100% {
+    opacity: 0;
+    animation: none;
+  }
+}
+
+@keyframes blink-caret {
+  0%,
+  100% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+  }
+}

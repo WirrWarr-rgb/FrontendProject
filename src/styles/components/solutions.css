@@ -85,7 +85,6 @@
   );
   background-size: 300% 100%;
   background-clip: text;
-  background-clip: text;
   -webkit-text-fill-color: transparent;
   color: transparent;
   animation: gradient-flow 10s linear infinite;

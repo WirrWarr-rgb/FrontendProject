@@ -47,6 +47,7 @@
   align-items: center;
   justify-content: center;
   position: relative;
+  transition: transform 0.3s ease;
 }
 
 /* Контейнер для SVG рисунков */
@@ -54,7 +55,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 2px; /* Маленькое расстояние между SVG элементами */
 }
 
 .benefits__item-content {

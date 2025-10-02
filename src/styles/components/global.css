@@ -56,19 +56,20 @@
   overflow: hidden;
   white-space: nowrap;
   width: 0;
-  animation: typing 2s steps(40, end) forwards;
+  animation: typing 1.2s steps(40, end) forwards;
 }
 
+/* Плавные переходы между строками */
 .typewriter-line:nth-child(1) {
   animation-delay: 0s;
 }
 
 .typewriter-line:nth-child(2) {
-  animation-delay: 2s;
+  animation-delay: 1.2s; /* Сразу после первой */
 }
 
 .typewriter-line:nth-child(3) {
-  animation-delay: 4s;
+  animation-delay: 2.4s; /* Сразу после второй */
 }
 
 .typewriter-cursor {
@@ -77,7 +78,7 @@
   height: 1em;
   background-color: var(--color-primary);
   opacity: 0;
-  animation: cursor-sequence 6.1s linear forwards;
+  animation: cursor-sequence 3.7s linear forwards;
 }
 
 @keyframes typing {
@@ -87,72 +88,47 @@
 }
 
 @keyframes cursor-sequence {
-  /* Начало - скрыт */
   0% {
     opacity: 0;
   }
 
   /* Первая строка */
-  1% {
+  2% {
     top: 0;
     left: 0;
     opacity: 1;
-    animation: blink-caret 0.75s step-end infinite;
   }
 
+  32% {
+    top: 0;
+    left: 100%;
+  }
+
+  /* Вторая строка - мгновенный переход */
   33% {
-    top: 0;
-    left: 100%;
-  }
-
-  /* Скрываем перед переходом */
-  34% {
-    opacity: 0;
-  }
-
-  /* Вторая строка */
-  35% {
     top: 1.2em;
     left: 0;
     opacity: 1;
   }
 
+  65% {
+    top: 1.2em;
+    left: 100%;
+  }
+
+  /* Третья строка - мгновенный переход */
   66% {
-    top: 1.2em;
-    left: 100%;
-  }
-
-  /* Скрываем перед переходом */
-  67% {
-    opacity: 0;
-  }
-
-  /* Третья строка */
-  68% {
     top: 2.4em;
     left: 0;
     opacity: 1;
   }
 
-  99% {
+  98% {
     top: 2.4em;
     left: 100%;
   }
 
-  /* Конец - скрываем навсегда */
   100% {
-    opacity: 0;
-    animation: none;
-  }
-}
-
-@keyframes blink-caret {
-  0%,
-  100% {
-    opacity: 1;
-  }
-
-  50% {
     opacity: 0;
   }
 }

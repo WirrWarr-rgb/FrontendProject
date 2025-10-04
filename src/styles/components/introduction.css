@@ -1,9 +1,6 @@
 .introduction {
   background-color: var(--color-bg-dark);
-  display: flex;
-  flex-direction: column;
-
-  /* padding-left: 111px; */
+  padding: 134px 0 150px;
 }
 
 .banner__title {
@@ -12,10 +9,7 @@
   font-size: 64px;
   line-height: 112%;
   letter-spacing: -0.02em;
-  text-transform: capitalize;
   color: var(--color-white);
-  text-align: left;
-  padding-top: 134px;
 }
 
 .quote {
@@ -31,14 +25,13 @@
   line-height: 142%;
   letter-spacing: -0.02em;
   color: var(--color-white);
-  text-align: left;
   padding-bottom: 36px;
 }
 
 .quote__info {
   display: flex;
-  align-items: center; /* Вертикальное выравнивание по центру */
-  gap: 24px; /* Расстояние между картинкой и текстом */
+  align-items: center;
+  gap: 24px;
 }
 
 .quote__icon {
@@ -51,7 +44,6 @@
   flex-shrink: 0;
   background-size: 280%;
   background-position: 48% 3%;
-  background-repeat: no-repeat;
 }
 
 .quote__name {
@@ -60,7 +52,6 @@
   font-size: 18px;
   line-height: 156%;
   color: var(--color-white);
-  margin: 0; /* Убираем стандартные отступы */
 }
 
 .quote__job {
@@ -69,6 +60,4 @@
   font-size: 16px;
   line-height: 162%;
   color: var(--color-white);
-  opacity: 0.8; /* Легкая прозрачность */
-  margin: 0; /* Убираем стандартные отступы */
 }

@@ -33,12 +33,12 @@
 
 .button--transparent {
   border: 1px solid var(--color-white);
+  color: var(--color-white);
   border-radius: 1px;
   padding: 15px 25px;
   width: 166px;
   height: 56px;
   background: rgb(255 255 255 / 0%);
-  color: var(--base-white);
   font-weight: 500;
   font-size: 16px;
   line-height: 162%;
@@ -48,24 +48,24 @@
   transition: all 0.3s ease;
 }
 
-.button-text {
-  background-color: transparent; /* Прозрачный фон */
-  color: var(--color-white); /* Белый текст */
+.button--text {
+  background-color: transparent;
+  color: var(--color-white);
   font-family: var(--font-family);
   font-weight: 500;
   font-size: 16px;
   line-height: 162%;
   letter-spacing: -0.02em;
-  border: none; /* Убираем границу */
-  padding: 0; /* Убираем отступы */
-  width: auto; /* Автоматическая ширина */
-  height: auto; /* Автоматическая высота */
+  border: none;
+  padding: 0;
+  width: auto;
+  height: auto;
   display: inline-flex;
   align-items: center;
-  gap: 8px; /* Расстояние между текстом и стрелкой */
+  gap: 8px;
   cursor: pointer;
-  align-self: flex-start; /* Выравнивание по левому краю */
-  margin-top: 17px; /* Отступ сверху после footer__info */
+  align-self: flex-start;
+  margin-top: 17px;
   transition: all 0.3s ease;
 }
 
@@ -79,25 +79,25 @@
   flex-shrink: 0;
 }
 
-.button:not(.button--transparent, .button-text):hover {
+.button:not(.button--transparent, .button--text):hover {
   border: 1px solid var(--color-primary);
-  background-color: var(--color-white); /* Белый фон */
-  color: var(--color-primary); /* Синий текст */
+  background-color: var(--color-white);
+  color: var(--color-primary);
 }
 
-.button:not(.button-text):hover::after {
+.button:not(.button--text):hover::after {
   background-image: url("data:image/svg+xml,%3Csvg width='20' height='10' viewBox='0 0 20 10' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M16.17 6L13.59 8.59L15 10L20 5L15 0L13.59 1.41L16.17 4H0V6H16.17Z' fill='%232E4FD7'/%3E%3C/svg%3E");
 }
 
 .button--transparent:hover {
-  background-color: var(--color-white); /* Белый фон */
-  color: var(--color-primary); /* Синий текст */
+  background-color: var(--color-white);
+  color: var(--color-primary);
   border: 1px solid var(--color-primary);
 }
 
-.button-text:hover {
+.button--text:hover {
   opacity: 0.8;
-  transform: translateX(5px); /* Легкое смещение при наведении */
+  transform: translateX(5px);
 }
 
 .button:hover::after {

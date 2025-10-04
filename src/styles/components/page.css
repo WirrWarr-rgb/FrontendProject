@@ -5,54 +5,21 @@
 }
 
 .page__header {
-  flex-shrink: 0;
   background-color: var(--color-white);
-  background-repeat: no-repeat;
-  background-position: right;
-  background-size: 60%;
-  width: 1440px;
-  height: 80px;
 }
 
 .page__introduction {
-  flex-shrink: 0;
   background-color: var(--color-bg-dark);
-  color: var(--color-white);
-  background-repeat: no-repeat;
-  background-position: right;
-  background-size: 60%;
-  width: 1440px;
-  height: 800px;
 }
 
 .page__solutions {
-  flex-shrink: 0;
   background-color: var(--color-bg-dark);
-  color: var(--color-white);
-  background-repeat: no-repeat;
-  background-position: right;
-  background-size: 60%;
-  padding: 80px 165px;
-  width: 1460px;
-  height: 1280px;
 }
 
 .page__benefits {
-  flex-shrink: 0;
   background-color: var(--color-white);
-  color: var(--color-white);
-  background-repeat: no-repeat;
-  background-position: right;
-  background-size: 60%;
-  padding: 132px 165px;
-  width: 1440px;
-  height: 600px;
 }
 
 .page__footer {
-  flex-shrink: 0;
   background-color: var(--color-bg-dark);
-  width: 1440px;
-  height: 408px;
-  padding: 70px 135px 44px;
 }

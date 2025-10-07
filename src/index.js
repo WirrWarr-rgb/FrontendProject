@@ -1,3 +1,4 @@
+/* global IntersectionObserver */
 import './index.css';
 
 const observerOptions = {

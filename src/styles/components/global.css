@@ -1,6 +1,5 @@
 /* Появление элементов */
 
-/* Базовые стили для анимированных элементов */
 .fade-in {
   opacity: 0;
   transform: translateY(30px);
@@ -12,7 +11,6 @@
   transform: translateY(0);
 }
 
-/* Для разных направлений */
 .slide-left {
   opacity: 0;
   transform: translateX(-50px);
@@ -31,7 +29,6 @@
   transform: translateX(0);
 }
 
-/* Задержки для последовательного появления */
 .delay-1 {
   transition-delay: 0.1s;
 }
@@ -43,8 +40,6 @@
 .delay-3 {
   transition-delay: 0.3s;
 }
-
-/* Появление текста */
 
 .typewriter-multiline {
   position: relative;
@@ -59,26 +54,16 @@
   animation: typing 1.2s steps(40, end) forwards;
 }
 
-/* Плавные переходы между строками */
 .typewriter-line:nth-child(1) {
   animation-delay: 0s;
 }
 
 .typewriter-line:nth-child(2) {
-  animation-delay: 1.2s; /* Сразу после первой */
+  animation-delay: 1.2s;
 }
 
 .typewriter-line:nth-child(3) {
-  animation-delay: 2.4s; /* Сразу после второй */
-}
-
-.typewriter-cursor {
-  position: absolute;
-  width: 2px;
-  height: 1em;
-  background-color: var(--color-primary);
-  opacity: 0;
-  animation: cursor-sequence 3.7s linear forwards;
+  animation-delay: 2.4s;
 }
 
 @keyframes typing {
@@ -92,7 +77,6 @@
     opacity: 0;
   }
 
-  /* Первая строка */
   2% {
     top: 0;
     left: 0;
@@ -104,7 +88,6 @@
     left: 100%;
   }
 
-  /* Вторая строка - мгновенный переход */
   33% {
     top: 1.2em;
     left: 0;
@@ -116,7 +99,6 @@
     left: 100%;
   }
 
-  /* Третья строка - мгновенный переход */
   66% {
     top: 2.4em;
     left: 0;

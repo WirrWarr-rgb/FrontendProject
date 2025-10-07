@@ -31,22 +31,14 @@
   display: inline-block;
 }
 
-.navbar__link:hover {
+.navbar__link:hover,
+.navbar__link:focus {
   color: var(--color-primary);
   cursor: pointer;
   transform: translateY(3px);
 }
 
-.navbar__actions {
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-  align-items: center;
-}
-
-.navbar__action {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  gap: 8px;
+.navbar__link:focus {
+  color: var(--color-alt);
+  outline: none;
 }

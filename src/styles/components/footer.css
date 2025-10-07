@@ -78,10 +78,16 @@
   display: inline-block;
 }
 
-.footer__links:hover {
+.footer__links:hover,
+.footer__links:focus {
   color: var(--color-primary);
   cursor: pointer;
   transform: translateY(3px);
+}
+
+.footer__links:focus {
+  color: var(--color-alt);
+  outline: none;
 }
 
 .footer__divider {

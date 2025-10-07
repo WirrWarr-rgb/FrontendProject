@@ -1,6 +1,6 @@
 .button {
   background-color: var(--color-primary);
-  color: var(--color-white);
+  color: var(--color-button-primary);
   font-family: var(--font-family);
   letter-spacing: -0.02em;
   display: inline-flex;
@@ -32,8 +32,8 @@
 }
 
 .button--transparent {
-  border: 1px solid var(--color-white);
-  color: var(--color-white);
+  border: 2px solid var(--color-white);
+  color: var(--color-button-primary);
   border-radius: 1px;
   padding: 15px 25px;
   width: 166px;
@@ -50,7 +50,7 @@
 
 .button--text {
   background-color: transparent;
-  color: var(--color-white);
+  color: var(--color-button-primary);
   font-family: var(--font-family);
   font-weight: 500;
   font-size: 16px;
@@ -77,29 +77,57 @@
   background-repeat: no-repeat;
   background-position: center;
   flex-shrink: 0;
+  transition: all 0.3s ease;
 }
 
-.button:not(.button--transparent, .button--text):hover {
-  border: 1px solid var(--color-primary);
-  background-color: var(--color-white);
-  color: var(--color-primary);
+.button:hover::after {
+  transform: translateX(3px);
 }
 
 .button:not(.button--text):hover::after {
   background-image: url("data:image/svg+xml,%3Csvg width='20' height='10' viewBox='0 0 20 10' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M16.17 6L13.59 8.59L15 10L20 5L15 0L13.59 1.41L16.17 4H0V6H16.17Z' fill='%232E4FD7'/%3E%3C/svg%3E");
 }
 
-.button--transparent:hover {
+.button:not(.button--text):focus::after {
+  background-image: url("data:image/svg+xml,%3Csvg width='20' height='10' viewBox='0 0 20 10' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M16.17 6L13.59 8.59L15 10L20 5L15 0L13.59 1.41L16.17 4H0V6H16.17Z' fill='%23f46953'/%3E%3C/svg%3E");
+}
+
+.button--text:focus::after {
+  background-image: url("data:image/svg+xml,%3Csvg width='20' height='10' viewBox='0 0 20 10' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M16.17 6L13.59 8.59L15 10L20 5L15 0L13.59 1.41L16.17 4H0V6H16.17Z' fill='%23f46953'/%3E%3C/svg%3E");
+}
+
+.button:not(.button--transparent, .button--text):focus,
+.button:not(.button--transparent, .button--text):hover {
+  border: 1px solid var(--color-primary);
+  background-color: var(--color-white);
+  color: var(--color-primary);
+}
+
+.button:not(.button--transparent, .button--text):focus {
+  border: 1px solid var(--color-alt);
+  color: var(--color-alt);
+  outline: none;
+}
+
+.button--transparent:hover,
+.button--transparent:focus {
   background-color: var(--color-white);
   color: var(--color-primary);
   border: 1px solid var(--color-primary);
 }
 
-.button--text:hover {
-  opacity: 0.8;
+.button--transparent:focus {
+  color: var(--color-alt);
+  border: 1px solid var(--color-alt);
+  outline: none;
+}
+
+.button--text:hover,
+.button--text:focus {
   transform: translateX(5px);
 }
 
-.button:hover::after {
-  transform: translateX(3px);
+.button--text:focus {
+  color: var(--color-alt);
+  outline: none;
 }

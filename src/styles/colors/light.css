@@ -1,6 +1,7 @@
 :root {
   color-scheme: light;
 
+  --color-text-light: var(--color-white-new);
   --color-text-primary: var(--color-rich-graphite);
   --color-text-secondary: var(--color-eerie-black);
   --color-text-alt: var(--color-spanish-gray);

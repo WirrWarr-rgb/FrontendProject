@@ -15,9 +15,10 @@
 
 .benefits__grid {
   display: grid;
+  place-items: center;
+  flex-direction: column;
   grid-template-columns: repeat(2, 1fr);
   gap: 48px 30px;
-  max-width: 1038px;
 }
 
 .benefits__item {

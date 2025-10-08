@@ -1,19 +1,20 @@
 :root {
   color-scheme: dark;
 
-  --color-text-primary: var(--color-bridge-gray);
-  --color-text-secondary: var(--color-bridge-gray);
+  --color-text-light: var(--color-white-new);
+  --color-text-primary: var(--color-white-new);
+  --color-text-secondary: var(--color-white-new);
   --color-text-alt: var(--color-spanish-gray);
   --color-bg-dark: var(--color-dark-green);
   --color-bg-secondary: var(--color-eerie-black);
-  --color-nero: var(--color-bridge-gray);
-  --color-gray: var(--color-bridge-gray);
-  --color-white: var(--color-dark-black);
+  --color-nero: var(--color-white-new);
+  --color-gray: var(--color-white-new);
+  --color-white: var(--color-rich-graphite);
   --color-primary: var(--color-royal-blue);
   --color-light-blue: var(--light-periwinkle);
   --color-secondary: var(--color-mint-green);
   --color-alt: var(--color-coral-red);
   --color-black: var(--color-black-new);
-  --color-gray-900: var(--color-bridge-gray);
+  --color-gray-900: var(--color-white-new);
   --color-button-primary: var(--color-white-new);
 }

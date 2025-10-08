@@ -32,7 +32,7 @@
 }
 
 .button--transparent {
-  border: 2px solid var(--color-white);
+  border: 2px solid var(--color-text-light);
   color: var(--color-button-primary);
   border-radius: 1px;
   padding: 15px 25px;
@@ -99,7 +99,7 @@
 .button:not(.button--transparent, .button--text):focus,
 .button:not(.button--transparent, .button--text):hover {
   border: 1px solid var(--color-primary);
-  background-color: var(--color-white);
+  background-color: var(--color-white-new);
   color: var(--color-primary);
 }
 
@@ -111,7 +111,7 @@
 
 .button--transparent:hover,
 .button--transparent:focus {
-  background-color: var(--color-white);
+  background-color: var(--color-white-new);
   color: var(--color-primary);
   border: 1px solid var(--color-primary);
 }

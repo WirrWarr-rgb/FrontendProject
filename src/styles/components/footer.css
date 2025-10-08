@@ -8,7 +8,7 @@
   font-weight: 800;
   font-size: 24px;
   line-height: 100%;
-  color: var(--color-white);
+  color: var(--color-text-light);
   padding-bottom: 33px;
 }
 
@@ -26,7 +26,7 @@
   font-size: 18px;
   line-height: 156%;
   letter-spacing: -0.02em;
-  color: var(--color-white);
+  color: var(--color-text-light);
   padding-bottom: 6px;
 }
 
@@ -36,7 +36,7 @@
   font-size: 16px;
   line-height: 162%;
   letter-spacing: -0.02em;
-  color: var(--color-white);
+  color: var(--color-text-light);
   padding-bottom: 7px;
 }
 
@@ -70,7 +70,7 @@
   font-size: 16px;
   line-height: 162%;
   letter-spacing: -0.02em;
-  color: var(--color-white);
+  color: var(--color-text-light);
   text-decoration: none;
   white-space: nowrap;
   text-align: right;
@@ -93,7 +93,7 @@
 .footer__divider {
   width: 1170px;
   height: 1px;
-  background: var(--color-white);
+  background: var(--color-text-light);
   opacity: 0.08;
   margin: 32px;
 }
@@ -110,7 +110,7 @@
   font-size: 14px;
   line-height: 157%;
   letter-spacing: -0.02em;
-  color: var(--color-white);
+  color: var(--color-text-light);
 }
 
 .footer__сopyrights-text-new {
@@ -119,5 +119,5 @@
   font-size: 14px;
   line-height: 157%;
   letter-spacing: -0.02em;
-  color: var(--color-white);
+  color: var(--color-text-light);
 }

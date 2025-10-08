@@ -9,7 +9,7 @@
   font-size: 64px;
   line-height: 112%;
   letter-spacing: -0.02em;
-  color: var(--color-white);
+  color: var(--color-text-light);
 }
 
 .bannet__quote {
@@ -24,7 +24,7 @@
   font-size: 24px;
   line-height: 142%;
   letter-spacing: -0.02em;
-  color: var(--color-white);
+  color: var(--color-text-light);
   padding-bottom: 36px;
 }
 
@@ -51,7 +51,7 @@
   font-weight: 600;
   font-size: 18px;
   line-height: 156%;
-  color: var(--color-white);
+  color: var(--color-text-light);
 }
 
 .quote__job {
@@ -59,5 +59,5 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 162%;
-  color: var(--color-white);
+  color: var(--color-text-light);
 }

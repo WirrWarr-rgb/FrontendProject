@@ -12,8 +12,7 @@
   font-size: 52px;
   line-height: 119%;
   letter-spacing: -0.02em;
-  color: var(--color-white);
-  text-align: center;
+  color: var(--color-text-light);
   margin-bottom: 52px;
 }
 

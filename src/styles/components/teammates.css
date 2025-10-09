@@ -1,0 +1,60 @@
+.teammates {
+  padding: 127px 0;
+}
+
+.teammates__title {
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 52px;
+  line-height: 119%;
+  letter-spacing: -0.02em;
+  color: var(--color-text-primary);
+  padding-bottom: 60px;
+}
+
+.teammates__grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 50px 30px;
+  max-width: 1110px;
+}
+
+.teammates__card {
+  transition: all 0.3s ease;
+}
+
+.teammates__card:hover {
+  transform: translateY(-5px);
+}
+
+.teammates__photo {
+  border-radius: 3px;
+  width: 255px;
+  height: 255px;
+  background: var(--color-bg-secondary);
+}
+
+.teammates__full-name {
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 142%;
+  letter-spacing: -0.02em;
+  color: var(--base-text-primary);
+}
+
+.teammates__job-position {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 150%;
+  letter-spacing: -0.02em;
+  color: var(--base-text-secondary);
+}
+
+.teammates__social-links {
+  justify-content: flex-start;
+  display: flex;
+  margin-left: 0;
+  gap: 15px;
+}

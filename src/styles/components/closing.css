@@ -1,0 +1,33 @@
+.closing {
+  padding: 115px 260px 114px;
+  display: flex;
+  place-items: center;
+  flex-direction: column;
+}
+
+.closing__banner {
+}
+
+.closing__title {
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 52px;
+  line-height: 119%;
+  letter-spacing: -0.02em;
+  text-align: center;
+  color: var(--color-text-primary);
+  white-space: nowrap;
+  padding-bottom: 24px;
+}
+
+.closing__desc {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 150%;
+  letter-spacing: -0.02em;
+  text-align: center;
+  color: var(--color-text-secondary);
+  white-space: nowrap;
+  padding-bottom: 57px;
+}

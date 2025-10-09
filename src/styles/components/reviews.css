@@ -1,0 +1,66 @@
+.reviews {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  padding: 84px 0 85px;
+}
+
+.reviews__card {
+  display: flex;
+  gap: 30px;
+  max-width: 920px;
+}
+
+.reviews__portrait {
+  width: 350px;
+  height: 405px;
+  border-radius: 3px;
+  background-image: url('/images/david.png');
+  padding-right: 30px;
+}
+
+.reviews__content {
+  display: flex;
+  flex-direction: column;
+}
+
+.reviews__text {
+  font-family: var(--font-family);
+  font-size: 42px;
+  line-height: 124%;
+  letter-spacing: -0.02em;
+  color: var(--color-text-primary);
+  padding-bottom: 66px;
+  font-weight: 400;
+  width: 540px;
+}
+
+.reviews__author {
+}
+
+.reviews__logo svg {
+  width: 126px;
+  height: 37px;
+}
+
+.reviews__person {
+  text-align: left;
+}
+
+.reviews__full-name {
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 142%;
+  letter-spacing: -0.02em;
+}
+
+.reviews__job-position {
+  font-family: var(--font-family);
+  font-size: 16px;
+  line-height: 162%;
+  letter-spacing: -0.02em;
+  color: var(--color-grey);
+  font-weight: 400;
+}

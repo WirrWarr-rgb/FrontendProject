@@ -23,3 +23,11 @@
 .page__footer {
   background-color: var(--color-bg-dark);
 }
+
+.page__closing {
+  background-color: var(--color-bg-secondary);
+}
+
+.page__reviews {
+  background-color: var(--color-white);
+}

@@ -2,8 +2,11 @@
 @import './styles/colors/colors.css';
 @import './styles/normalize.css';
 @import './styles/global/utility.css';
+@import './styles/global/fonts.css';
 @import './styles/components/container.css';
 @import './styles/components/button.css';
+@import './styles/components/nav-button.css';
+@import './styles/components/social-icon.css';
 @import './styles/components/page.css';
 @import './styles/components/navbar.css';
 @import './styles/components/introduction.css';
@@ -11,3 +14,7 @@
 @import './styles/components/benefits.css';
 @import './styles/components/footer.css';
 @import './styles/components/global.css';
+@import './styles/components/closing.css';
+@import './styles/components/reviews.css';
+@import './styles/components/customers.css';
+@import './styles/components/teammates.css';

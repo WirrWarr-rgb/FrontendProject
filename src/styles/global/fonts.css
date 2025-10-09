@@ -1,12 +1,11 @@
 @font-face {
   font-family: Leifa;
   src: url('src/styles/fonts/leifa-extrabold.woff2') format('woff2');
-  font-weight: 700;
   font-style: normal;
   font-display: swap;
 }
 
 :root {
-  --font-family: 'Inter', sans-serif;
+  --font-family: sans-serif;
   --second-family: 'Leifa', sans-serif;
 }

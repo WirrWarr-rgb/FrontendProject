@@ -1,4 +1,7 @@
 .teammates {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
   padding: 127px 0;
 }
 
@@ -10,6 +13,10 @@
   letter-spacing: -0.02em;
   color: var(--color-text-primary);
   padding-bottom: 60px;
+  align-self: flex-start;
+  width: 100%;
+  max-width: 1110px;
+  margin: 0 auto;
 }
 
 .teammates__grid {
@@ -41,6 +48,7 @@
   line-height: 142%;
   letter-spacing: -0.02em;
   color: var(--base-text-primary);
+  padding-top: 24px;
 }
 
 .teammates__job-position {
@@ -57,4 +65,5 @@
   display: flex;
   margin-left: 0;
   gap: 15px;
+  padding-top: 15px;
 }

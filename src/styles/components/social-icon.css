@@ -7,6 +7,7 @@
   background: var(--color-bg-secondary);
   position: relative;
   transition: all 0.3s ease;
+  outline: none;
 }
 
 /* LinkedIn (полная версия) */
@@ -61,5 +62,14 @@
 }
 
 .social-icon:hover::before {
-  filter: brightness(0) invert(1); /* Делает иконку белой при ховере */
+  filter: brightness(0) invert(1);
+}
+
+.social-icon:focus {
+  transform: scale(1.1);
+  background: var(--color-coral-red);
+}
+
+.social-icon:focus::before {
+  filter: brightness(0) invert(1);
 }

@@ -1,23 +1,27 @@
 .benefits {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
   background-color: var(--color-white);
-  padding: 132px 0;
+  padding: 40px 0;
 }
 
 .benefits__title {
   font-family: var(--font-family);
   font-weight: 700;
-  font-size: 52px;
+  font-size: 26px;
   line-height: 119%;
   letter-spacing: -0.02em;
   color: var(--color-gray-900);
-  margin-bottom: 38px;
+  padding-bottom: 38px;
+  max-width: 1110px;
 }
 
 .benefits__grid {
   display: grid;
   place-items: center;
   flex-direction: column;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(1, 1fr);
   gap: 48px 30px;
 }
 
@@ -27,6 +31,7 @@
   background-color: var(--color-white);
   border-radius: 8px;
   transition: all 0.3s ease;
+  width: 350px;
 }
 
 .benefits__item:hover {
@@ -53,13 +58,12 @@
 }
 
 .benefits__item-content {
-  width: 428px;
 }
 
 .benefits__item-title {
   font-family: var(--font-family);
   font-weight: 700;
-  font-size: 24px;
+  font-size: 16px;
   line-height: 142%;
   letter-spacing: -0.02em;
   color: var(--color-gray-900);
@@ -69,7 +73,67 @@
 .benefits__item-desc {
   font-family: var(--font-family);
   font-weight: 400;
-  font-size: 16px;
+  font-size: 12px;
   line-height: 162%;
   color: var(--color-gray-900);
+}
+
+@media (--md-viewport) {
+  .benefits {
+    background-color: var(--color-white);
+    padding: 132px 0;
+  }
+
+  .benefits__title {
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 52px;
+    line-height: 119%;
+    letter-spacing: -0.02em;
+    color: var(--color-gray-900);
+    padding-bottom: 38px;
+    align-self: flex-start;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1110px;
+  }
+
+  .benefits__grid {
+    display: grid;
+    place-items: center;
+    flex-direction: column;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 48px 30px;
+  }
+
+  .benefits__item {
+    display: flex;
+    gap: 40px;
+    background-color: var(--color-white);
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    width: 540px;
+  }
+
+  .benefits__item-title {
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 142%;
+    letter-spacing: -0.02em;
+    color: var(--color-gray-900);
+    margin-bottom: 8px;
+  }
+
+  .benefits__item-desc {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 162%;
+    color: var(--color-gray-900);
+  }
+
+  .benefits__item-content {
+    width: 428px;
+  }
 }

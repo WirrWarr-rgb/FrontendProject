@@ -1,6 +1,8 @@
 .footer {
   background-color: var(--color-bg-dark);
-  padding: 70px 0 44px;
+  padding: 40px 20px;
+  text-align: center;
+  place-items: center;
 }
 
 .footer__title {
@@ -14,16 +16,18 @@
 
 .footer__info {
   display: flex;
+  gap: 30px;
 }
 
 .footer__about {
   flex: 1;
+  text-align: left;
 }
 
 .footer_about-title {
   font-family: var(--font-family);
   font-weight: 500;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 156%;
   letter-spacing: -0.02em;
   color: var(--color-text-light);
@@ -33,29 +37,22 @@
 .footer_about-desc {
   font-family: var(--font-family);
   font-weight: 400;
-  font-size: 16px;
+  font-size: 12px;
   line-height: 162%;
   letter-spacing: -0.02em;
   color: var(--color-text-light);
-  padding-bottom: 7px;
 }
 
 .footer__links-menu {
   display: flex;
   flex-direction: column;
-  gap: 32px;
+  flex: 1;
+  text-align: right;
 }
 
+.links-row:last-child,
 .links-row:first-child {
-  display: flex;
   gap: 22px;
-  justify-content: flex-end;
-}
-
-.links-row:last-child {
-  display: flex;
-  gap: 22px;
-  justify-content: flex-end;
 }
 
 .footer__links-menu ul {
@@ -67,7 +64,7 @@
 .footer__links {
   font-family: var(--font-family);
   font-weight: 400;
-  font-size: 16px;
+  font-size: 12px;
   line-height: 162%;
   letter-spacing: -0.02em;
   color: var(--color-text-light);
@@ -91,33 +88,159 @@
 }
 
 .footer__divider {
-  width: 1170px;
+  width: 100%;
+  max-width: 300px;
   height: 1px;
   background: var(--color-text-light);
   opacity: 0.08;
-  margin: 32px;
+  margin: 32px auto;
 }
 
 .footer__сopyrights {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 30px;
 }
 
 .footer__сopyrights-text {
   font-family: var(--font-family);
   font-weight: 400;
-  font-size: 14px;
+  font-size: 12px;
   line-height: 157%;
   letter-spacing: -0.02em;
   color: var(--color-text-light);
+  flex: 1;
+  text-align: left;
 }
 
 .footer__сopyrights-text-new {
   font-family: var(--font-family);
   font-weight: 400;
-  font-size: 14px;
+  font-size: 12px;
   line-height: 157%;
   letter-spacing: -0.02em;
   color: var(--color-text-light);
+  flex: 1;
+  text-align: right;
+}
+
+@media (--md-viewport) {
+  .footer {
+    background-color: var(--color-bg-dark);
+    padding: 70px 0 44px;
+    text-align: left;
+    place-items: normal;
+  }
+
+  .footer__title {
+    font-family: var(--second-family);
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 100%;
+    color: var(--color-text-light);
+    padding-bottom: 33px;
+  }
+
+  .footer_about-title {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 156%;
+    letter-spacing: -0.02em;
+    color: var(--color-text-light);
+    padding-bottom: 6px;
+  }
+
+  .footer_about-desc {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 162%;
+    letter-spacing: -0.02em;
+    color: var(--color-text-light);
+    padding-bottom: 7px;
+  }
+
+  .footer__info {
+    display: flex;
+    gap: 0;
+  }
+
+  .footer__about {
+    padding: 0;
+    flex: 1;
+  }
+
+  .footer__links-menu {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+  }
+
+  .links-row:first-child {
+    display: flex;
+    gap: 22px;
+    justify-content: flex-end;
+  }
+
+  .links-row:last-child {
+    display: flex;
+    gap: 22px;
+    justify-content: flex-end;
+  }
+
+  .footer__links-menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .footer__links {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 162%;
+    letter-spacing: -0.02em;
+    color: var(--color-text-light);
+    text-decoration: none;
+    white-space: nowrap;
+    text-align: right;
+    transition: all 0.3s ease;
+    display: inline-block;
+  }
+
+  .footer__divider {
+    width: 100%;
+    max-width: 1170px;
+    height: 1px;
+    background: var(--color-text-light);
+    opacity: 0.08;
+    margin: 32px;
+  }
+
+  .footer__сopyrights {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0;
+  }
+
+  .footer__сopyrights-text {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 157%;
+    letter-spacing: -0.02em;
+    color: var(--color-text-light);
+  }
+
+  .footer__сopyrights-text-new {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 157%;
+    letter-spacing: -0.02em;
+    color: var(--color-text-light);
+  }
 }

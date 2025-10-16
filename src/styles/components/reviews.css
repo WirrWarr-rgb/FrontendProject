@@ -1,23 +1,39 @@
 .reviews {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  gap: 30px;
-  padding: 84px 0 85px;
+  padding: 40px 0;
+  gap: 20px;
+  position: relative;
+}
+
+.reviews .nav-button {
+  display: none;
+}
+
+.reviews__mobile-buttons {
+  display: flex;
+  gap: 40px;
+}
+
+.reviews__mobile-buttons .nav-button {
+  display: flex;
 }
 
 .reviews__card {
   display: flex;
-  gap: 30px;
-  max-width: 920px;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 100%;
 }
 
 .reviews__portrait {
-  width: 350px;
-  height: 405px;
+  width: 100%;
+  height: 300px;
   border-radius: 3px;
   background-image: url('/images/david.png');
-  padding-right: 30px;
+  background-size: cover;
+  background-position: center;
 }
 
 .reviews__content {
@@ -27,21 +43,18 @@
 
 .reviews__text {
   font-family: var(--font-family);
-  font-size: 42px;
-  line-height: 124%;
+  font-size: 20px;
+  line-height: 130%;
   letter-spacing: -0.02em;
   color: var(--color-text-primary);
-  padding-bottom: 66px;
+  padding-bottom: 15px;
   font-weight: 400;
-  width: 540px;
-}
-
-.reviews__author {
+  width: 100%;
 }
 
 .reviews__logo svg {
-  width: 126px;
-  height: 37px;
+  width: 100px;
+  height: 30px;
 }
 
 .reviews__person {
@@ -51,16 +64,67 @@
 .reviews__full-name {
   font-family: var(--font-family);
   font-weight: 700;
-  font-size: 24px;
+  font-size: 18px;
   line-height: 142%;
   letter-spacing: -0.02em;
 }
 
 .reviews__job-position {
   font-family: var(--font-family);
-  font-size: 16px;
+  font-size: 14px;
   line-height: 162%;
   letter-spacing: -0.02em;
   color: var(--color-grey);
   font-weight: 400;
+}
+
+@media (--md-viewport) {
+  .reviews {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    padding: 84px 0 85px;
+  }
+
+  .reviews .nav-button {
+    display: flex;
+  }
+
+  .reviews__mobile-buttons {
+    display: none;
+  }
+
+  .reviews__card {
+    flex-direction: row;
+    gap: 30px;
+    max-width: 920px;
+  }
+
+  .reviews__portrait {
+    width: 350px;
+    height: 405px;
+    padding-right: 30px;
+    margin-bottom: 0;
+  }
+
+  .reviews__text {
+    font-size: 42px;
+    line-height: 124%;
+    padding-bottom: 66px;
+    width: 540px;
+  }
+
+  .reviews__logo svg {
+    width: 126px;
+    height: 37px;
+  }
+
+  .reviews__full-name {
+    font-size: 24px;
+  }
+
+  .reviews__job-position {
+    font-size: 16px;
+  }
 }

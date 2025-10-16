@@ -31,3 +31,11 @@
 .page__reviews {
   background-color: var(--color-white);
 }
+
+.page__customers {
+  background-color: var(--color-white);
+}
+
+.page__teammates {
+  background-color: var(--color-white);
+}

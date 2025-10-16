@@ -1,29 +1,29 @@
 .teammates {
   display: flex;
-  align-items: center;
   flex-direction: column;
-  padding: 127px 0;
+  align-items: center;
+  padding: 40px 0;
+  text-align: center;
 }
 
 .teammates__title {
   font-family: var(--font-family);
   font-weight: 700;
-  font-size: 52px;
-  line-height: 119%;
+  font-size: 32px;
+  line-height: 120%;
   letter-spacing: -0.02em;
   color: var(--color-text-primary);
-  padding-bottom: 60px;
-  align-self: flex-start;
+  padding-bottom: 40px;
   width: 100%;
-  max-width: 1110px;
+  max-width: 600px;
   margin: 0 auto;
 }
 
 .teammates__grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 50px 30px;
-  max-width: 1110px;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px 20px;
+  max-width: 100%;
 }
 
 .teammates__card {
@@ -36,34 +36,79 @@
 
 .teammates__photo {
   border-radius: 3px;
-  width: 255px;
-  height: 255px;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1 / 1; /* делает квадратное фото адаптивным */
   background: var(--color-bg-secondary);
 }
 
 .teammates__full-name {
   font-family: var(--font-family);
   font-weight: 600;
-  font-size: 24px;
-  line-height: 142%;
+  font-size: 18px;
+  line-height: 140%;
   letter-spacing: -0.02em;
   color: var(--base-text-primary);
-  padding-top: 24px;
+  padding-top: 16px;
 }
 
 .teammates__job-position {
   font-family: var(--font-family);
   font-weight: 500;
-  font-size: 20px;
+  font-size: 14px;
   line-height: 150%;
   letter-spacing: -0.02em;
   color: var(--base-text-secondary);
 }
 
 .teammates__social-links {
-  justify-content: flex-start;
   display: flex;
-  margin-left: 0;
-  gap: 15px;
-  padding-top: 15px;
+  justify-content: center;
+  gap: 12px;
+  padding-top: 12px;
+}
+
+@media (--md-viewport) {
+  .teammates {
+    flex-direction: column;
+    align-items: center;
+    padding: 127px 0;
+    text-align: left;
+  }
+
+  .teammates__title {
+    font-size: 52px;
+    line-height: 119%;
+    padding-bottom: 60px;
+    align-self: flex-start;
+    max-width: 1110px;
+  }
+
+  .teammates__grid {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 50px 30px;
+    max-width: 1110px;
+  }
+
+  .teammates__photo {
+    width: 255px;
+    height: 255px;
+  }
+
+  .teammates__full-name {
+    font-size: 24px;
+    line-height: 142%;
+    padding-top: 24px;
+  }
+
+  .teammates__job-position {
+    font-size: 20px;
+    line-height: 150%;
+  }
+
+  .teammates__social-links {
+    justify-content: flex-start;
+    gap: 15px;
+    padding-top: 15px;
+  }
 }

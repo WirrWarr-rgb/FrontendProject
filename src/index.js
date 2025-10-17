@@ -1,4 +1,4 @@
-/* global IntersectionObserver */
+/* global setTimeout IntersectionObserver */
 import './index.css';
 
 const observerOptions = {

@@ -41,75 +41,25 @@
   transition-delay: 0.3s;
 }
 
+/* Стили для анимации печати */
 .typewriter-multiline {
   position: relative;
-  overflow: hidden;
+  opacity: 0;
+  transition: opacity 0.3s ease;
 }
 
-.typewriter-line {
-  display: block;
-  overflow: hidden;
-  white-space: nowrap;
-  width: 0;
-  animation: typing 1.2s steps(40, end) forwards;
+.typewriter-cursor {
+  display: inline;
+  animation: blink 0.8s infinite;
+  font-weight: normal;
 }
 
-.typewriter-line:nth-child(1) {
-  animation-delay: 0s;
-}
-
-.typewriter-line:nth-child(2) {
-  animation-delay: 1.2s;
-}
-
-.typewriter-line:nth-child(3) {
-  animation-delay: 2.4s;
-}
-
-@keyframes typing {
-  to {
-    width: 100%;
-  }
-}
-
-@keyframes cursor-sequence {
-  0% {
-    opacity: 0;
-  }
-
-  2% {
-    top: 0;
-    left: 0;
+@keyframes blink {
+  0%,
+  50% {
     opacity: 1;
   }
-
-  32% {
-    top: 0;
-    left: 100%;
-  }
-
-  33% {
-    top: 1.2em;
-    left: 0;
-    opacity: 1;
-  }
-
-  65% {
-    top: 1.2em;
-    left: 100%;
-  }
-
-  66% {
-    top: 2.4em;
-    left: 0;
-    opacity: 1;
-  }
-
-  98% {
-    top: 2.4em;
-    left: 100%;
-  }
-
+  51%,
   100% {
     opacity: 0;
   }

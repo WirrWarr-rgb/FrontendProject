@@ -23,7 +23,7 @@
   text-align: left;
 }
 
-.footer_about-title {
+.footer__about-title {
   font-family: var(--font-family);
   font-weight: 500;
   font-size: 16px;
@@ -33,7 +33,7 @@
   padding-bottom: 6px;
 }
 
-.footer_about-desc {
+.footer__about-desc {
   font-family: var(--font-family);
   font-weight: 400;
   font-size: 12px;
@@ -47,17 +47,6 @@
   flex-direction: column;
   flex: 1;
   text-align: right;
-}
-
-.links-row:last-child,
-.links-row:first-child {
-  gap: 22px;
-}
-
-.footer__links-menu ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
 }
 
 .footer__links {
@@ -139,11 +128,11 @@
     padding: 0;
   }
 
-  .footer_about-title {
+  .footer__about-title {
     font-size: 18px;
   }
 
-  .footer_about-desc {
+  .footer__about-desc {
     font-size: 16px;
     padding-bottom: 7px;
   }

@@ -35,7 +35,7 @@
   transform: translateY(-5px);
 }
 
-.solutions__item:hover .solutions__item-img {
+.solutions__item:hover .solutions__item-icon {
   animation: icon-jump 0.6s ease-in-out;
 }
 
@@ -63,13 +63,7 @@
 }
 
 .solutions__item:hover .solutions__item-title {
-  background: linear-gradient(
-    90deg,
-    var(--color-primary),
-    var(--color-secondary),
-    var(--color-alt),
-    var(--color-primary)
-  );
+  background: linear-gradient(90deg, var(--color-primary), var(--color-alt), var(--color-primary));
   background-size: 300% 100%;
   background-clip: text;
   -webkit-text-fill-color: transparent;

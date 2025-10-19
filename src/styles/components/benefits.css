@@ -56,9 +56,6 @@
   justify-content: center;
 }
 
-.benefits__item-content {
-}
-
 .benefits__item-title {
   font-family: var(--font-family);
   font-weight: 700;

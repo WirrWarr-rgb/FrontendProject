@@ -5,7 +5,7 @@
   text-align: center;
 }
 
-.customers__number__title {
+.customers__number-title {
   font-family: var(--font-family);
   font-weight: 700;
   font-size: 28px;
@@ -15,7 +15,7 @@
   padding-bottom: 6px;
 }
 
-.customers__number__desc {
+.customers__number-desc {
   font-family: var(--font-family);
   font-weight: 400;
   font-size: 16px;

@@ -12,6 +12,14 @@
   flex-shrink: 0;
 }
 
+.nav-button--desktop {
+  display: none;
+}
+
+.nav-button--mobile {
+  display: flex;
+}
+
 .nav-button::before {
   content: '';
   position: absolute;
@@ -69,5 +77,13 @@
   .nav-button::before {
     width: 33px;
     height: 33px;
+  }
+
+  .nav-button--desktop {
+    display: flex;
+  }
+
+  .nav-button--mobile {
+    display: none;
   }
 }

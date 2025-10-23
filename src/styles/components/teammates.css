@@ -16,7 +16,6 @@
   padding-bottom: 40px;
   width: 100%;
   max-width: 600px;
-  margin: 0 auto;
 }
 
 .teammates__grid {
@@ -38,7 +37,7 @@
   border-radius: 3px;
   width: 100%;
   height: auto;
-  aspect-ratio: 1 / 1; /* делает квадратное фото адаптивным */
+  aspect-ratio: 1 / 1;
   background: var(--color-bg-secondary);
 }
 
@@ -70,8 +69,6 @@
 
 @media (--md-viewport) {
   .teammates {
-    flex-direction: column;
-    align-items: center;
     padding: 127px 0;
     text-align: left;
   }
@@ -80,8 +77,8 @@
     font-size: 52px;
     line-height: 119%;
     padding-bottom: 60px;
-    align-self: flex-start;
     max-width: 1110px;
+    margin: 0 auto;
   }
 
   .teammates__grid {

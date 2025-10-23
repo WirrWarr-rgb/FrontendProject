@@ -5,7 +5,7 @@
   text-align: center;
 }
 
-.customers__number__title {
+.customers__number-title {
   font-family: var(--font-family);
   font-weight: 700;
   font-size: 28px;
@@ -15,7 +15,7 @@
   padding-bottom: 6px;
 }
 
-.customers__number__desc {
+.customers__number-desc {
   font-family: var(--font-family);
   font-weight: 400;
   font-size: 16px;
@@ -24,7 +24,7 @@
   color: var(--color-gray-900);
 }
 
-.customers__logo__grid {
+.customers__logo-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   align-items: center;
@@ -33,14 +33,10 @@
   margin-top: 32px;
 }
 
-.customers__logo__item {
+.customers__logo-item {
   display: flex;
   justify-content: center;
-  height: 60px;
-}
-
-.customers__logo__item svg {
-  height: auto;
+  height: 90px;
 }
 
 @media (--md-viewport) {
@@ -56,25 +52,21 @@
     padding: 90px 0;
   }
 
-  .customers__number__title {
+  .customers__number-title {
     font-size: 42px;
     line-height: 124%;
     padding-bottom: 8px;
   }
 
-  .customers__number__desc {
+  .customers__number-desc {
     font-size: 18px;
   }
 
-  .customers__logo__grid {
+  .customers__logo-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
     column-gap: 30px;
     max-width: 730px;
-    margin-top: 0;
-  }
-
-  .customers__logo__item {
-    height: 90px;
+    padding: 32px 0;
   }
 }

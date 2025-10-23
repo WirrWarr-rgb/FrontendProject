@@ -7,17 +7,9 @@
   position: relative;
 }
 
-.reviews .nav-button {
-  display: none;
-}
-
 .reviews__mobile-buttons {
   display: flex;
   gap: 40px;
-}
-
-.reviews__mobile-buttons .nav-button {
-  display: flex;
 }
 
 .reviews__card {
@@ -52,7 +44,7 @@
   width: 100%;
 }
 
-.reviews__logo svg {
+.reviews__logo {
   width: 100px;
   height: 30px;
 }
@@ -87,10 +79,6 @@
     padding: 84px 0 85px;
   }
 
-  .reviews .nav-button {
-    display: flex;
-  }
-
   .reviews__mobile-buttons {
     display: none;
   }
@@ -115,7 +103,7 @@
     width: 540px;
   }
 
-  .reviews__logo svg {
+  .reviews__logo {
     width: 126px;
     height: 37px;
   }

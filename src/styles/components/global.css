@@ -70,3 +70,13 @@
 .links-row:first-child {
   gap: 22px;
 }
+
+.links-row:first-child {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.links-row:last-child {
+  display: flex;
+  justify-content: flex-end;
+}

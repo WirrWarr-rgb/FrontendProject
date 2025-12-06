@@ -80,3 +80,10 @@
   display: flex;
   justify-content: flex-end;
 }
+
+@media (width <= 767px) {
+  .links-row:last-child,
+  .links-row:first-child {
+    gap: 0;
+  }
+}
